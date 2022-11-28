@@ -1,10 +1,9 @@
-import { FaBeer } from 'react-icons/fa';
-import './App.css'
+import { FaBeer } from "react-icons/fa";
+import "./App.css";
+import NavBar from "./components/NavBar";
 
-function App() {
-  return (
-    <div className="text-3xl flex items-center justify-center font-bold underline">Hello<FaBeer /></div>
-  )
-}
+const App = () => {
+  return <NavBar />;
+};
 
-export default App
+export default App;
