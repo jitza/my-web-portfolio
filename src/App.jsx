@@ -1,9 +1,15 @@
 import { FaBeer } from "react-icons/fa";
 import "./App.css";
 import NavBar from "./components/NavBar";
+import Home from "./components/Home";
 
 const App = () => {
-  return <NavBar />;
+  return (
+    <div>
+      <NavBar />
+      <Home />
+    </div>
+  );
 };
 
 export default App;
