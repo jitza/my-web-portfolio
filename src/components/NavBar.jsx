@@ -1,45 +1,51 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const NavBar = () => {
   const links = [
     {
       id: 1,
-      link: "Home",
+      name: "home",
+      link: "/",
     },
     {
       id: 2,
-      link: "About",
+      name: "about",
+      link: "about",
     },
     {
       id: 3,
-      link: "Services",
+      name: "services",
+      link: "services",
     },
     {
       id: 6,
-      link: "Portfolio",
+      name: "portfolio",
+      link: "portfolio",
     },
     {
       id: 7,
-      link: "Experience",
+      name: "experience",
+      link: "experience",
     },
     {
       id: 8,
-      link: "Contact",
+      name: "contact",
+      link: "contact",
     },
   ];
   return (
-    <div className="bg-purple text-pink absolute inset-x-0 bottom-0 p-8">
+    <nav className="bg-purple text-pink absolute inset-x-0 bottom-0 p-8">
       <ul className="flex justify-center">
-        {links.map(({ id, link }) => (
+        {links.map(({ id, name, link }) => (
           <li
             key={id}
             className="cursor-pointer uppercase px-4 hover:scale-110 duration-200"
           >
-            {link}
+            <Link to={link}>{name}</Link>
           </li>
         ))}
       </ul>
-    </div>
+    </nav>
   );
 };
 
