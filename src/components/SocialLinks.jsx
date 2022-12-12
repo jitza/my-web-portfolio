@@ -52,7 +52,7 @@ const SocialLinks = () => {
     },
   ];
   return (
-    <ul className="flex flex-row gap-2 text-2xl cursor-pointer">
+    <ul className="flex flex-row gap-2 text-xl cursor-pointer">
       {links.map(({ id, child, href }) => (
         <li key={id}>
           <a href={href} target="_blank">

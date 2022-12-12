@@ -33,7 +33,7 @@ const Home = () => {
         <div className="grid grid-row-3 gap-3">
           <h1 className="text-7xl text-purple font-serif">Jenny Itza</h1>
           <div className="bg-purple h-2 w-72" />
-          <h2 className="text-xl font-bold text-purple uppercase">
+          <h2 className="text-lg font-bold text-purple uppercase">
             Front End Developer
           </h2>
           <SocialLinks />

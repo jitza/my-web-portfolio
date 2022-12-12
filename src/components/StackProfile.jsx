@@ -3,7 +3,7 @@ import secondProfile from "../assets/secondProfile.jpeg";
 
 const StackProfile = () => {
   return (
-    <div className="flex justify-center absolute top-56">
+    <div className="flex justify-center absolute top-40">
       <img
         src={MyProfile}
         alt="My Profile"
