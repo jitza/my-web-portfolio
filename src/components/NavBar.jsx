@@ -36,12 +36,12 @@ const NavBar = () => {
     },
   ];
   return (
-    <nav className=" text-pink md:bg-purple absolute inset-x-0 bottom-0">
+    <nav className="text-pink md:bg-purple absolute inset-x-0 bottom-0">
       <ul className="hidden md:flex justify-center p-6 lg:p-8">
         {links.map(({ id, name, link }) => (
           <li
             key={id}
-            className="cursor-pointer uppercase px-4 hover:scale-110 duration-200"
+            className="cursor-pointer uppercase px-6 hover:scale-110 duration-200"
           >
             <Link to={link}>{name}</Link>
           </li>
@@ -50,8 +50,8 @@ const NavBar = () => {
       <div
         onClick={() => setNav(!nav)}
         className={`cursor-pointe absolute z-10 top-6 right-6 ${
-          nav ? "rotate-180" : "-rotate-180"
-        } duration-100 delay-75 md:hidden`}
+          nav ? "rotate-90" : "-rotate-180 text-purple"
+        } duration-500 md:hidden`}
       >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
@@ -61,7 +61,7 @@ const NavBar = () => {
         } ease-in-out duration-300 md:hidden `}
       >
         {links.map(({ id, name, link }) => (
-          <li key={id} className="px-4 cursor-pointer capitalize py-6 text-3xl">
+          <li key={id} className="px-4 cursor-pointer uppercase py-6 text-2xl">
             <Link onClick={() => setNav(!nav)} to={link}>
               {name}
             </Link>
