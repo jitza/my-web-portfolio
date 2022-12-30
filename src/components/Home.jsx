@@ -3,11 +3,12 @@ import ReactCurvedText from "react-curved-text";
 import StackProfile from "./StackProfile";
 import SocialLinks from "./SocialLinks";
 import myProfile from "../assets/myProfile.jpeg";
+import myProfileCut from "../assets/myProfileCut.jpeg";
 
 const Home = () => {
   return (
     <div className="bg-primary h-screen w-full flex justify-center items-center">
-      <div className="invisible md:visible absolute top-4 right-4">
+      {/* <div className="hidden md:absolute top-4 right-4">
         <ReactCurvedText
           width={180}
           height={170}
@@ -26,19 +27,18 @@ const Home = () => {
           ellipseProps={null}
           svgProps={null}
         />
-        <h1 className="invisible md:visible text-5xl text-secondary absolute top-16 right-20">
+        <h1 className="hidden md:text-5xl text-secondary absolute top-16 right-20">
           JI
         </h1>
-      </div>
+      </div> */}
       <div className="flex flex-col gap-8 md:grid grid-cols-2 grid-flow-row">
-        <img
-          src={myProfile}
-          alt="myProfile"
-          className="shadow-secondary shadow-2xl md:hidden"
-          width="300"
-        />
-        <div className="invisible md:visible">
-          <StackProfile />
+        <div className="flex justify-center mt-8">
+          <img
+            src={myProfileCut}
+            alt="myProfile"
+            className="shadow-secondary shadow-2xl"
+            width="300"
+          />
         </div>
         <div className="grid grid-row-3 gap-3">
           <h1 className="text-5xl text-secondary font-semibold md:text-7xl">
