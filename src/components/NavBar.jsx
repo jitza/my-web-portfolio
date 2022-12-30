@@ -36,39 +36,47 @@ const NavBar = () => {
     },
   ];
   return (
-    <nav className="text-primary md:bg-secondary absolute inset-x-0 bottom-0">
-      <ul className="hidden md:flex justify-center p-6 lg:p-8">
+    <div className="flex justify-center items-center w-full h-20 px-4 text-primary bg-secondary fixed md:bottom-0">
+      <ul className="hidden md:flex">
         {links.map(({ id, name, link }) => (
           <li
             key={id}
-            className="cursor-pointer uppercase px-6 hover:scale-110 duration-200"
+            className="px-4 cursor-pointer uppercase font-medium text-primary hover:scale-105 duration-200"
           >
-            <Link to={link}>{name}</Link>
-          </li>
-        ))}
-      </ul>
-      <div
-        onClick={() => setNav(!nav)}
-        className={`cursor-pointe absolute z-10 top-6 right-6 ${
-          nav ? "rotate-90" : "-rotate-180 text-secondary"
-        } duration-500 md:hidden`}
-      >
-        {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
-      </div>
-      <ul
-        className={`flex flex-col justify-center items-center w-full h-screen bg-secondary ${
-          nav ? "translate-x-0" : "translate-x-full"
-        } ease-in-out duration-300 md:hidden `}
-      >
-        {links.map(({ id, name, link }) => (
-          <li key={id} className="px-4 cursor-pointer uppercase py-6 text-2xl">
-            <Link onClick={() => setNav(!nav)} to={link}>
+            <Link to={link} smooth duration={500}>
               {name}
             </Link>
           </li>
         ))}
       </ul>
-    </nav>
+
+      <div
+        onClick={() => setNav(!nav)}
+        className="cursor-pointer absolute right-6 z-10 text-primary md:hidden"
+      >
+        {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
+      </div>
+
+      {nav && (
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-secondary text-primary">
+          {links.map(({ id, name, link }) => (
+            <li
+              key={id}
+              className="px-4 cursor-pointer uppercase py-6 text-3xl"
+            >
+              <Link
+                onClick={() => setNav(!nav)}
+                to={link}
+                smooths
+                duration={500}
+              >
+                {name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
   );
 };
 
