@@ -36,7 +36,7 @@ const NavBar = () => {
     },
   ];
   return (
-    <nav className="text-pink md:bg-purple absolute inset-x-0 bottom-0">
+    <nav className="text-primary md:bg-secondary absolute inset-x-0 bottom-0">
       <ul className="hidden md:flex justify-center p-6 lg:p-8">
         {links.map(({ id, name, link }) => (
           <li
@@ -50,13 +50,13 @@ const NavBar = () => {
       <div
         onClick={() => setNav(!nav)}
         className={`cursor-pointe absolute z-10 top-6 right-6 ${
-          nav ? "rotate-90" : "-rotate-180 text-purple"
+          nav ? "rotate-90" : "-rotate-180 text-secondary"
         } duration-500 md:hidden`}
       >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
       <ul
-        className={`flex flex-col justify-center items-center w-full h-screen bg-purple ${
+        className={`flex flex-col justify-center items-center w-full h-screen bg-secondary ${
           nav ? "translate-x-0" : "translate-x-full"
         } ease-in-out duration-300 md:hidden `}
       >
