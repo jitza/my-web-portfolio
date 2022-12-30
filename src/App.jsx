@@ -5,13 +5,13 @@ import About from "./components/About";
 
 const App = () => {
   return (
-    <div>
+    <>
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
       </Routes>
-    </div>
+    </>
   );
 };
 
