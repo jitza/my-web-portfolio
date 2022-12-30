@@ -37,6 +37,7 @@ const NavBar = () => {
   ];
   return (
     <div className="flex justify-center items-center w-full h-16 px-4 text-primary bg-secondary fixed md:bottom-0">
+      <h2 className="absolute left-8 font-serif text-4xl md:hidden">Jitza</h2>
       <ul className="hidden md:flex">
         {links.map(({ id, name, link }) => (
           <li
@@ -52,7 +53,7 @@ const NavBar = () => {
 
       <div
         onClick={() => setNav(!nav)}
-        className="cursor-pointer absolute right-6 z-10 text-primary md:hidden"
+        className="cursor-pointer absolute right-6 z-10 text-rose-400 md:hidden"
       >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
