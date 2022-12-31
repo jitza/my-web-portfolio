@@ -18,6 +18,10 @@ module.exports = {
         //   },
         primary: "#f7c1bb",
         secondary: "#7b0d1e",
+        pink: "#f8e5ee",
+      },
+      fontFamily: {
+        signature: ["Great Vibes"],
       },
     },
   },
