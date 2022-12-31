@@ -37,7 +37,7 @@ const NavBar = () => {
     },
   ];
   return (
-    <div className="flex justify-center items-center w-full h-20 text-primary bg-secondary fixed md:bottom-0">
+    <div className="flex justify-center items-center w-full h-20 text-primary bg-secondary fixed md:bottom-0 z-10">
       <h2 className="absolute left-5 font-signature text-5xl text-pink md:hidden">
         Jitza
       </h2>
