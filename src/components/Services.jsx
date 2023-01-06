@@ -21,11 +21,7 @@ const Services = () => {
               key={id}
               className="border-8 rounded-lg p-4 text-secondary md:m-4"
             >
-              <img
-                src={img}
-                alt="services"
-                className="h-16 px-16 sm:20 md:h-40"
-              />
+              <img src={img} alt="services" className="h-16 px-16 md:h-28" />
               <div className="text-center font-medium pt-2 md:font-bold text-xl">
                 {name}
               </div>
