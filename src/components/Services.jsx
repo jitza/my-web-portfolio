@@ -19,7 +19,7 @@ const Services = () => {
           {services.map(({ id, name, img }) => (
             <div
               key={id}
-              className="border-8 border-white rounded-lg p-4 text-secondary md:m-4 hover:bg-rose-300"
+              className="border-8 border-white rounded-lg p-4 text-secondary md:m-4 hover:scale-105 duration-200"
             >
               <img src={img} alt="services" className="h-16 px-16 md:h-28" />
               <div className="text-center font-medium pt-2 md:font-bold text-xl">
