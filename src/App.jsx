@@ -3,10 +3,11 @@ import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Services from "./components/Services";
+import Projects from "./components/Projects";
 import ReactFullpage from "@fullpage/react-fullpage";
 import "./index.css";
 
-const anchors = ["firstPage", "secondPage", "thirdPage"];
+const anchors = ["home", "about", "services", "projects"];
 
 const App = () => (
   <ReactFullpage
@@ -18,14 +19,18 @@ const App = () => (
     render={({ state, fullpageApi }) => {
       return (
         <div>
+          <NavBar />
           <div className="section">
-            <h3>Section 1</h3>
+            <Home />
           </div>
           <div className="section">
-            <h3>Section 2</h3>
+            <About />
           </div>
           <div className="section">
-            <h3>Section 3</h3>
+            <Services />
+          </div>
+          <div className="section">
+            <Projects />
           </div>
         </div>
       );
