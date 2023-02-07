@@ -3,7 +3,6 @@ import SocialLinks from "./SocialLinks";
 import myProfile from "../assets/myProfile.jpeg";
 import myProfileimg from "../assets/myProfile.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -34,15 +33,15 @@ const Home = () => {
           </h2>
           <SocialLinks />
           <div className="hidden md:flex">
-            <Link
-              to="portfolio"
+            <a
+              href="#projects"
               className="group text-white w-fit px-6 py-2 flex items-center rounded-md bg-rose-500 cursor-pointer hover:bg-rose-700"
             >
               Portfolio
               <span>
                 <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
               </span>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
