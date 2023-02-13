@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -8,67 +7,65 @@ const NavBar = () => {
     {
       id: 1,
       name: "home",
-      link: "/",
+      link: "#home",
     },
     {
       id: 2,
       name: "about",
-      link: "about",
+      link: "#about",
     },
     {
       id: 3,
       name: "services",
-      link: "services",
+      link: "#services",
     },
     {
       id: 6,
       name: "portfolio",
-      link: "portfolio",
+      link: "#portfolio",
     },
     {
       id: 7,
       name: "experience",
-      link: "experience",
+      link: "#experience",
     },
     {
       id: 8,
       name: "contact",
-      link: "contact",
+      link: "#contact",
     },
   ];
   return (
-    <div className="flex justify-center items-center w-full h-20 text-primary bg-secondary fixed md:bottom-0 z-10">
-      <h2 className="absolute left-5 font-signature text-5xl text-pink md:hidden">
-        Jitza
-      </h2>
+    <div className="flex justify-end items-center w-full h-20 text-white bg-slate-900 fixed z-10">
+      <h2 className="absolute left-5 font-signature text-5xl">Jitza</h2>
       <ul className="hidden md:flex">
         {links.map(({ id, name, link }) => (
           <li
             key={id}
-            className="px-4 cursor-pointer uppercase font-medium text-primary hover:scale-105 duration-200"
+            className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200"
           >
-            <Link to={link}>{name}</Link>
+            <a href={link}>{name}</a>
           </li>
         ))}
       </ul>
 
       <div
         onClick={() => setNav(!nav)}
-        className="cursor-pointer absolute right-6 z-10 text-primary md:hidden"
+        className="cursor-pointer absolute right-6 z-10 text-gray-500 md:hidden"
       >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
 
       {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-secondary text-primary">
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-slate-900 to-gray-900 text-gray-500">
           {links.map(({ id, name, link }) => (
             <li
               key={id}
-              className="px-4 cursor-pointer uppercase py-6 text-3xl"
+              className="px-4 cursor-pointer uppercase py-6 text-2xl"
             >
-              <Link onClick={() => setNav(!nav)} to={link}>
+              <a onClick={() => setNav(!nav)} href={link}>
                 {name}
-              </Link>
+              </a>
             </li>
           ))}
         </ul>

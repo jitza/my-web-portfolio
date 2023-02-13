@@ -6,14 +6,14 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const Home = () => {
   return (
-    <div className="bg-primary h-screen w-full flex justify-center items-center">
+    <div className="h-screen w-full flex justify-center items-center bg-gradient-to-b from-slate-900 to-gray-900 text-gray-500">
       <div className="flex flex-col gap-8 md:grid grid-cols-2 grid-flow-row">
-        <div className="flex justify-center mt-20 md:hidden">
+        <div className="flex justify-center md:hidden">
           <img
             src={myProfile}
             alt="myProfile"
-            className="shadow-secondary shadow-2xl rounded-lg"
-            width="300"
+            className="rounded-lg"
+            width="280"
           />
         </div>
         <div className="hidden md:flex justify-center">
@@ -23,19 +23,14 @@ const Home = () => {
             className="h-96 absolute -translate-y-24"
           />
         </div>
-        <div className="grid grid-row-4 gap-4">
-          <h1 className="text-6xl text-secondary font-bold md:text-7xl">
-            Jenny Itza
-          </h1>
-          <div className="bg-secondary h-2  w-64 md:w-80" />
-          <h2 className="text-xl font-bold text-secondary uppercase">
-            Front End Developer
-          </h2>
+        <div className="grid grid-row-4 gap-3">
+          <h1 className="text-6xl font-bold md:text-7xl">Jenny Itza</h1>
+          <h2 className="text-xl font-bold uppercase">Front End Developer</h2>
           <SocialLinks />
-          <div className="hidden md:flex">
+          <div className="hidden md:flex mt-2">
             <a
-              href="#projects"
-              className="group text-white w-fit px-6 py-2 flex items-center rounded-md bg-rose-500 cursor-pointer hover:bg-rose-700"
+              href="#portfolio"
+              className="cursor-pointer group text-white w-fit px-6 py-2 flex items-center rounded-md bg-rose-500 hover:bg-rose-700"
             >
               Portfolio
               <span>

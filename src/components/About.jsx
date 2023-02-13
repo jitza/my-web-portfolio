@@ -2,12 +2,12 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="bg-primary flex justify-center items-center h-screen w-full">
-      <section className="md:px-32">
-        <h1 className="text-xl font-bold text-secondary uppercase underline underline-offset-8 py-6 text-center md:text-2xl">
+    <div className="flex items-center h-screen w-full bg-gradient-to-b from-slate-900 to-gray-900 text-gray-500">
+      <section className="text-center md:px-32">
+        <h1 className="text-xl font-bold uppercase underline underline-offset-8 pb-6 md:text-2xl">
           About Me
         </h1>
-        <p className="text-secondary text-center px-6 md:text-xl">
+        <p className="px-12 md:text-xl">
           I’m a creative front-end developer, graphic designer and game
           developer; I love to solve design problems, implement innovative web
           features and develop applications with various development tools and
