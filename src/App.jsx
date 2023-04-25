@@ -1,13 +1,12 @@
 import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
-import About from "./components/About";
 import Services from "./components/Services";
 import Portfolio from "./components/Portfolio";
 import ReactFullpage from "@fullpage/react-fullpage";
 import "./index.css";
 
-const anchors = ["home", "about", "services", "portfolio"];
+const anchors = ["home", "services", "portfolio"];
 
 const App = () => (
   <>
@@ -23,9 +22,6 @@ const App = () => (
           <div>
             <div className="section">
               <Home />
-            </div>
-            <div className="section">
-              <About />
             </div>
             <div className="section">
               <Services />
