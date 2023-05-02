@@ -19,7 +19,7 @@ const App = () => (
       // sectionsColor={["#7fff00", "#00ffff", "#29ab87"]}
       render={({ state, fullpageApi }) => {
         return (
-          <div>
+          <div className=" bg-gradient-to-b from-slate-900 to-gray-900 text-gray-500">
             <div className="section">
               <Home />
             </div>
