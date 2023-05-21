@@ -3,11 +3,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-import hangman_game from "../assets/projects/hangman_game.png";
-import shooting_game from "../assets/projects/shooting_game.png";
+import hangman_game from "../assets/projects/hangman_game.jpg";
+import shooting_game from "../assets/projects/shooting_game.jpg";
 import cafeteria from "../assets/projects/cafeteria.png";
-import photobook from "../assets/projects/photobook.png";
+import photobook from "../assets/projects/photobook.jpg";
 import charts from "../assets/projects/charts.png";
+import focFinal from "../assets/projects/focFinal.jpg";
+import smiley_face from "../assets/projects/smiley_face.jpg";
 import { EffectCoverflow, Pagination, Keyboard, Autoplay } from "swiper";
 
 const Portfolio = () => {
@@ -34,13 +36,25 @@ const Portfolio = () => {
       id: 4,
       name: "Photo Book",
       img: photobook,
-      link: "https://github.com/jitza/CafeteriaSimulator.git",
+      link: "https://github.com/jitza/Photobook",
     },
     {
       id: 5,
       name: "Charts",
       img: charts,
       link: "https://github.com/jitza/Charts.git",
+    },
+    {
+      id: 6,
+      name: "FOC Final",
+      img: focFinal,
+      link: "https://github.com/jitza/foc-final-web-project",
+    },
+    {
+      id: 7,
+      name: "Smiley Face",
+      img: smiley_face,
+      link: "https://github.com/jitza/SmileyFace",
     },
   ];
   return (
