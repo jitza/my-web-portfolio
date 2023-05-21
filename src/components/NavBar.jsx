@@ -10,6 +10,11 @@ const NavBar = () => {
       link: "#home",
     },
     {
+      id: 2,
+      name: "about",
+      link: "#about",
+    },
+    {
       id: 3,
       name: "services",
       link: "#services",
@@ -31,7 +36,7 @@ const NavBar = () => {
     },
   ];
   return (
-    <div className="flex justify-end items-center w-full h-20 text-white bg-slate-900 fixed z-10">
+    <div className="w-full h-20 flex justify-end items-center fixed z-10">
       <ul className="hidden md:flex">
         {links.map(({ id, name, link }) => (
           <li
@@ -51,7 +56,7 @@ const NavBar = () => {
       </div>
 
       {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-slate-900 to-gray-900 text-gray-500">
+        <ul className="w-full h-screen flex flex-col justify-center items-center absolute top-0 left-0 bg-gradient-to-b from-slate-900 to-gray-900 text-gray-500">
           {links.map(({ id, name, link }) => (
             <li
               key={id}

@@ -6,7 +6,7 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const Home = () => {
   return (
-    <div className="h-screen w-full flex justify-center items-center bg-gradient-to-b from-slate-900 to-gray-900 text-gray-500">
+    <div className="h-screen w-full flex justify-center items-center ">
       <div className="flex flex-col gap-8 md:grid grid-cols-2 grid-flow-row">
         <div className="flex justify-center md:hidden">
           <img

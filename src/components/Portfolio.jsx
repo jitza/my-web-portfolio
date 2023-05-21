@@ -58,7 +58,7 @@ const Portfolio = () => {
     },
   ];
   return (
-    <div className="h-screen w-full flex justify-center items-center bg-gradient-to-b from-slate-900 to-gray-900 text-gray-500">
+    <div className="h-screen w-full flex justify-center items-center ">
       <Swiper
         style={{
           "--swiper-pagination-color": "#fff",
