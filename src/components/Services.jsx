@@ -1,7 +1,7 @@
 import React from "react";
-import graphicDesign from "../assets/service/graphicDesign.png";
-import webDesign from "../assets/service/webDesign.png";
-import webDevelopment from "../assets/service/webDevelopment.png";
+import graphicDesign from "../assets/services/graphicDesign.png";
+import webDesign from "../assets/services/webDesign.png";
+import webDevelopment from "../assets/services/webDevelopment.png";
 
 const Services = () => {
   const services = [
