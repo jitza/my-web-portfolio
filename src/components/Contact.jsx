@@ -1,4 +1,5 @@
 import React from "react";
+import { BsChevronDoubleUp } from "react-icons/bs";
 
 const Contact = () => {
   return (
@@ -9,6 +10,12 @@ const Contact = () => {
         </h1>
         <div class="p-6">This is going to be my contact page :)</div>
       </section>
+      <a
+        className="hidden md:flex absolute bottom-0 animate-bounce"
+        href="#home"
+      >
+        <BsChevronDoubleUp size={40} />
+      </a>
     </div>
   );
 };

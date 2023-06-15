@@ -2,6 +2,7 @@ import React from "react";
 import SocialLinks from "./SocialLinks";
 import myProfile from "../assets/myProfile.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { BsChevronDoubleDown } from "react-icons/bs";
 
 const Home = () => {
   return (
@@ -29,6 +30,12 @@ const Home = () => {
           </a>
         </section>
       </div>
+      <a
+        className="hidden md:flex absolute bottom-0 animate-bounce"
+        href="#contact"
+      >
+        <BsChevronDoubleDown size={40} />
+      </a>
     </div>
   );
 };
