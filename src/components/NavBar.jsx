@@ -1,5 +1,11 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { IoHome } from "react-icons/io5";
+import { AiFillFolderOpen } from "react-icons/ai";
+import { BsPersonLinesFill } from "react-icons/bs";
+import { BiMailSend, BiCodeBlock } from "react-icons/bi";
+import { VscTools } from "react-icons/vsc";
+import logo from "../assets/Logos/3.png";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -7,43 +13,55 @@ const NavBar = () => {
     {
       id: 1,
       name: "home",
+      icon: IoHome,
       link: "#home",
     },
     {
       id: 2,
       name: "about",
+      icon: BsPersonLinesFill,
       link: "#about",
     },
     {
       id: 3,
       name: "services",
+      icon: VscTools,
       link: "#services",
     },
     {
       id: 6,
       name: "portfolio",
+      icon: AiFillFolderOpen,
       link: "#portfolio",
     },
     {
       id: 7,
       name: "experience",
+      icon: BiCodeBlock,
       link: "#experience",
     },
     {
       id: 8,
       name: "contact",
+      icon: BiMailSend,
       link: "#contact",
     },
   ];
   return (
-    <div className="w-full h-20 flex justify-end items-center fixed z-10">
-      <ul className="hidden md:flex">
-        {links.map(({ id, name, link }) => (
+    <div className="w-full h-28 flex justify-end items-center fixed z-10 bg-teal-500">
+      <ul className="hidden md:flex px-20 ">
+        <img
+          src={logo}
+          className="absolute left-24 top-0"
+          width="300"
+          height="400"
+        />
+        {links.map(({ id, name, link, icon: Icon }) => (
           <li
             key={id}
-            className="px-8 cursor-pointer uppercase font-medium text-gray-500 hover:scale-105 duration-200"
+            className="px-8 cursor-pointer uppercase font-medium text-white hover:scale-105 duration-200"
           >
-            <a href={link}>{name}</a>
+            <a href={link}>{Icon && <Icon size={25} />}</a>
           </li>
         ))}
       </ul>
