@@ -61,7 +61,7 @@ const NavBar = () => {
             key={id}
             className="px-8 cursor-pointer uppercase font-medium text-white hover:scale-105 duration-200"
           >
-            <a href={link}>{Icon && <Icon size={25} />}</a>
+            <a href={link}>{name}</a>
           </li>
         ))}
       </ul>
