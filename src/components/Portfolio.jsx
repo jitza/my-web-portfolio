@@ -82,7 +82,7 @@ const Portfolio = () => {
       >
         {projects.map(({ id, name, img, link }) => (
           <SwiperSlide>
-            <a href={link}>
+            <a href={link} target="_blank">
               <img src={img} />
             </a>
           </SwiperSlide>
