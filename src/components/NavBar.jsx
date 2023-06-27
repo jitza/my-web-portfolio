@@ -48,12 +48,12 @@ const NavBar = () => {
     },
   ];
   return (
-    <div className="w-full h-28 flex justify-end items-center fixed z-10 bg-teal-500">
+    <div className="w-full h-24 flex justify-end items-center fixed z-10 bg-emerald-500">
       <ul className="hidden md:flex px-20 ">
         <img
           src={logo}
-          className="absolute left-24 top-0"
-          width="300"
+          className="absolute left-28 top-0"
+          width="250"
           height="400"
         />
         {links.map(({ id, name, link, icon: Icon }) => (
