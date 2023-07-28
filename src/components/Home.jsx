@@ -16,7 +16,9 @@ const Home = () => {
           />
         </section>
         <section className="grid grid-row-4 gap-3">
-          <h1 className="text-6xl font-bold md:text-7xl">Jenny Itza</h1>
+          <h1 className="text-6xl font-bold md:text-7xl hover:text-pink-900">
+            Jenny Itza
+          </h1>
           <h2 className="text-xl font-bold uppercase">Front End Developer</h2>
           <SocialLinks />
           <a
