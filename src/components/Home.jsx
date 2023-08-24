@@ -10,7 +10,6 @@ const Home = () => {
       <div className="flex flex-col md:grid grid-cols-2 grid-flow-row">
         <section>
           <img
-            src={myProfile}
             alt="myProfile"
             className="h-96 p-6 md:absolute md:-translate-y-24"
           />
