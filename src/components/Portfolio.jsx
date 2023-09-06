@@ -3,134 +3,89 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-import a from "../assets/dev/1.jpg";
-import b from "../assets/dev/2.jpg";
-import c from "../assets/dev/3.jpg";
-import e from "../assets/dev/9.jpg"; //Small
-import f from "../assets/dev/6.jpg";
-import g from "../assets/dev/7.jpg";
-import j from "../assets/dev/10.jpg";
-import k from "../assets/dev/11.jpg";
-import m from "../assets/dev/13.jpg";
-import n from "../assets/dev/14.jpg";
-import o from "../assets/dev/15.jpg";
-
+import shooting_game_2 from "../assets/projects/shooting_game_2.jpg";
+import shooting_game from "../assets/projects/shooting_game.jpg";
+import hangman_game from "../assets/projects/hangman_game.jpg";
+import photo_book from "../assets/projects/photo_book.jpg";
+import digital_clock from "../assets/projects/digital_clock.jpg";
+import notepad_with_translator from "../assets/projects/notepad_with_translator.jpg";
+import notepad_with_st_file from "../assets/projects/notepad_with_st_file.jpg";
+import smiley_face from "../assets/projects/smiley_face.jpg";
+import charts from "../assets/projects/charts.jpg";
+import final_foc from "../assets/projects/final_foc.jpg";
+import cafeteria_simulator from "../assets/projects/cafeteria_simulator.jpg";
 import { EffectCoverflow, Pagination, Keyboard, Autoplay } from "swiper";
 
 const Portfolio = () => {
   const projects = [
     {
       id: 1,
-      name: "1",
-      img: a,
-      link: "",
+      name: "Hangman Game",
+      img: hangman_game,
+      link: "https://github.com/jitza/Hangman.git",
     },
     {
       id: 2,
-      name: "1",
-      img: b,
-      link: "",
+      name: "Shooting Game",
+      img: shooting_game,
+      link: "https://github.com/jitza/ShootingGameVol1.git",
     },
-
     {
       id: 3,
-      name: "1",
-      img: c,
-      link: "",
-    },
-
-    {
-      id: 1,
-      name: "1",
-      img: e,
-      link: "",
+      name: "Shooting Game vol2",
+      img: shooting_game_2,
+      link: "https://github.com/jitza/ShootingGameVol2.git",
     },
     {
-      id: 1,
-      name: "1",
-      img: f,
-      link: "",
+      id: 4,
+      name: "Cafeteria Simulator",
+      img: cafeteria_simulator,
+      link: "https://github.com/jitza/CafeteriaSimulator.git",
     },
     {
-      id: 1,
-      name: "1",
-      img: g,
-      link: "",
+      id: 5,
+      name: "Photo Book",
+      img: photo_book,
+      link: "https://github.com/jitza/Photobook",
     },
     {
-      id: 1,
-      name: "1",
-      img: j,
-      link: "",
+      id: 6,
+      name: "Notepad with Statistics File Generator",
+      img: notepad_with_st_file,
+      link: "https://github.com/jitza/NotepadStatisticsFile",
     },
     {
-      id: 1,
-      name: "1",
-      img: k,
-      link: "",
+      id: 7,
+      name: "Charts",
+      img: charts,
+      link: "https://github.com/jitza/Charts.git",
     },
     {
-      id: 1,
-      name: "1",
-      img: m,
-      link: "",
+      id: 8,
+      name: "Notepad with Translator",
+      img: notepad_with_translator,
+      link: "https://github.com/jitza/NotepadWithTranslation",
     },
     {
-      id: 1,
-      name: "1",
-      img: n,
-      link: "",
+      id: 9,
+      name: "FOC Final",
+      img: final_foc,
+      link: "https://github.com/jitza/foc-final-web-project",
     },
     {
-      id: 1,
-      name: "1",
-      img: o,
-      link: "",
+      id: 10,
+      name: "Smiley Face",
+      img: smiley_face,
+      link: "https://github.com/jitza/SmileyFace",
     },
-
-    // {
-    //   id: 1,
-    //   name: "Hangman Game",
-    //   img: hangman_game,
-    //   link: "https://github.com/jitza/Hangman.git",
-    // },
-    // {
-    //   id: 2,
-    //   name: "Shooting Game",
-    //   img: shooting_game,
-    //   link: "https://github.com/jitza/ShootingGameVol1.git",
-    // },
-    // {
-    //   id: 3,
-    //   name: "Cafeteria Simulator",
-    //   img: cafeteria,
-    //   link: "https://github.com/jitza/CafeteriaSimulator.git",
-    // },
-    // {
-    //   id: 4,
-    //   name: "Photo Book",
-    //   img: photobook,
-    //   link: "https://github.com/jitza/Photobook",
-    // },
-    // {
-    //   id: 5,
-    //   name: "Charts",
-    //   img: charts,
-    //   link: "https://github.com/jitza/Charts.git",
-    // },
-    // {
-    //   id: 6,
-    //   name: "FOC Final",
-    //   img: focFinal,
-    //   link: "https://github.com/jitza/foc-final-web-project",
-    // },
-    // {
-    //   id: 7,
-    //   name: "Smiley Face",
-    //   img: smiley_face,
-    //   link: "https://github.com/jitza/SmileyFace",
-    // },
+    {
+      id: 11,
+      name: "Digital Clock",
+      img: digital_clock,
+      link: "https://github.com/jitza/DigitalClock",
+    },
   ];
+
   return (
     <div className="h-screen w-full flex justify-center items-center ">
       <Swiper
