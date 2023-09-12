@@ -16,9 +16,9 @@ module.exports = {
         //     800: "#846358",
         //     900: "#43302b",
         //   },
-        primary: "#f7c1bb",
-        secondary: "#7b0d1e",
-        pink: "#f8e5ee",
+        // primary: "#f7c1bb",
+        // secondary: "#7b0d1e",
+        // pink: "#f8e5ee",
       },
       fontFamily: {
         signature: ["Great Vibes"],
