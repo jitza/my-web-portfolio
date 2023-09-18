@@ -50,12 +50,14 @@ const NavBar = () => {
   return (
     <div className="w-full h-24 flex justify-end items-center fixed z-10 bg-slate-900">
       <ul className="hidden md:flex px-20 ">
-        <img
-          src={logo}
-          className="absolute left-28 top-0"
-          width="250"
-          height="400"
-        />
+        <a href="#home">
+          <img
+            src={logo}
+            className="absolute left-28 top-0"
+            width="250"
+            height="400"
+          />
+        </a>
         {links.map(({ id, name, link, icon: Icon }) => (
           <li
             key={id}
