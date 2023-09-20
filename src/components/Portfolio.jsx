@@ -30,12 +30,12 @@ const Portfolio = () => {
       img: shooting_game,
       link: "https://github.com/jitza/ShootingGameVol1.git",
     },
-    {
-      id: 3,
-      name: "Shooting Game vol2",
-      img: shooting_game_2,
-      link: "https://github.com/jitza/ShootingGameVol2.git",
-    },
+    // {
+    //   id: 3,
+    //   name: "Shooting Game vol2",
+    //   img: shooting_game_2,
+    //   link: "https://github.com/jitza/ShootingGameVol2.git",
+    // },
     {
       id: 4,
       name: "Cafeteria Simulator",

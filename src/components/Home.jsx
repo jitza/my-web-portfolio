@@ -1,6 +1,7 @@
 import React from "react";
 import SocialLinks from "./SocialLinks";
 import myProfile from "../assets/myProfile.png";
+import Profile from "../assets/profile.jpg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { BsChevronDoubleDown } from "react-icons/bs";
 
@@ -10,6 +11,7 @@ const Home = () => {
       <div className="flex flex-col md:grid grid-cols-2 grid-flow-row">
         <section>
           <img
+            src={Profile}
             alt="myProfile"
             className="h-96 p-6 md:absolute md:-translate-y-24"
           />

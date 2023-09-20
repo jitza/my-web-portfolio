@@ -47,19 +47,23 @@ const NavBar = () => {
       link: "#contact",
     },
   ];
+
   return (
     <div className="w-full h-24 flex justify-end items-center fixed z-10 bg-slate-900">
-      <ul className="hidden md:flex px-20 ">
+      <a href="#home">
         <img
           src={logo}
-          className="absolute left-28 top-0"
+          className="absolute left-2 top-2"
           width="250"
           height="400"
         />
+      </a>
+
+      <ul className="hidden md:flex pr-4">
         {links.map(({ id, name, link, icon: Icon }) => (
           <li
             key={id}
-            className="px-8 cursor-pointer uppercase font-medium text-gray-500 hover:scale-105 duration-200"
+            className="px-2 cursor-pointer uppercase text-gray-500 hover:scale-105 duration-200 lg:px-6"
           >
             <a href={link}>{name}</a>
           </li>

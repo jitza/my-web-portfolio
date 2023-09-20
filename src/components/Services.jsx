@@ -1,13 +1,13 @@
 import React from "react";
 import graphicDesign from "../assets/services/graphicDesign.png";
-import webDesign from "../assets/services/webDesign.png";
+import appDevelopment from "../assets/services/appDevelopment.png";
 import webDevelopment from "../assets/services/webDevelopment.png";
 
 const Services = () => {
   const services = [
     { id: 1, name: "Graphic Design", img: graphicDesign },
     { id: 2, name: "Web Development", img: webDevelopment },
-    { id: 3, name: "Web Design", img: webDesign },
+    { id: 3, name: "App Development", img: appDevelopment },
   ];
   return (
     <div className="h-screen w-full flex justify-center items-center">
