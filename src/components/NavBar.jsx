@@ -53,7 +53,7 @@ const NavBar = () => {
       <a href="#home">
         <img
           src={logo}
-          className="absolute left-2 top-2"
+          className="absolute left-2 -top-1"
           width="250"
           height="400"
         />
