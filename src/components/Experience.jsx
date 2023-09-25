@@ -8,8 +8,8 @@ const Experience = () => {
         <h1 className="text-xl font-bold uppercase underline underline-offset-8 text-center md:text-2xl">
           Tech I've Work With
         </h1>
-        <div class="pt-6 uppercase font-bold md:flex flex-col-20 ">
-          <ul>
+        <div class="pt-6 uppercase font-bold md:flex flex-col-2">
+          <ul class="w-80">
             <li class="p-2 flex items-center bg-pink-500 text-white md:p-4">
               <MdDoubleArrow />
               <sapn class="pl-2"> html</sapn>
@@ -39,7 +39,7 @@ const Experience = () => {
               <sapn class="pl-2">react js</sapn>
             </li>
           </ul>
-          <ul>
+          <ul class="w-80">
             {" "}
             <li class="p-2 flex items-center bg-white text-pink-500 md:p-4">
               <MdDoubleArrow />
