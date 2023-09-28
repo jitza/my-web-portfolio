@@ -1,5 +1,6 @@
 import React from "react";
 import { MdDoubleArrow } from "react-icons/md";
+import test5 from "../assets/bg/test5.png";
 
 const Experience = () => {
   return (
@@ -8,6 +9,7 @@ const Experience = () => {
         <h1 className="text-xl font-bold uppercase underline underline-offset-8 text-center md:text-2xl">
           Tech I've Work With
         </h1>
+        <img src={test5} alt="experiences" className="absolute-center" />
         <div className="pt-6 uppercase font-bold md:flex flex-col-2">
           <ul className="w-80">
             <li className="p-2 flex items-center bg-pink-500 text-white md:p-4">
