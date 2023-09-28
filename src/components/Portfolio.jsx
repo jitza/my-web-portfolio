@@ -110,7 +110,7 @@ const Portfolio = () => {
         modules={[EffectCoverflow, Pagination, Keyboard, Autoplay]}
       >
         {projects.map(({ id, name, img, link }) => (
-          <SwiperSlide>
+          <SwiperSlide key={id}>
             <a href={link} target="_blank">
               <img src={img} />
             </a>

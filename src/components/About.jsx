@@ -7,7 +7,7 @@ const About = () => {
         <h1 className="text-xl font-bold uppercase underline underline-offset-8 md:text-2xl">
           Who Am I
         </h1>
-        <div class="p-6 md:text-xl">
+        <div className="p-6 md:text-xl">
           Hello, I am Jenny, a versatile creative professional with expertise in
           front-end development, graphic design, and app development. I have a
           passion for tackling design challenges, implementing innovative web

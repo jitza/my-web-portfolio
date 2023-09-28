@@ -5,7 +5,7 @@ import { AiFillFolderOpen } from "react-icons/ai";
 import { BsPersonLinesFill } from "react-icons/bs";
 import { BiMailSend, BiCodeBlock } from "react-icons/bi";
 import { VscTools } from "react-icons/vsc";
-import logo from "../assets/Logos/3.png";
+import myLogo from "../assets/myLogo.png";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -52,7 +52,7 @@ const NavBar = () => {
     <div className="w-full h-24 flex justify-end items-center fixed z-10 bg-slate-900">
       <a href="#home">
         <img
-          src={logo}
+          src={myLogo}
           className="absolute left-2 -top-1"
           width="250"
           height="400"

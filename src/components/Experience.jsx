@@ -8,66 +8,66 @@ const Experience = () => {
         <h1 className="text-xl font-bold uppercase underline underline-offset-8 text-center md:text-2xl">
           Tech I've Work With
         </h1>
-        <div class="pt-6 uppercase font-bold md:flex flex-col-2">
-          <ul class="w-80">
-            <li class="p-2 flex items-center bg-pink-500 text-white md:p-4">
+        <div className="pt-6 uppercase font-bold md:flex flex-col-2">
+          <ul className="w-80">
+            <li className="p-2 flex items-center bg-pink-500 text-white md:p-4">
               <MdDoubleArrow />
-              <sapn class="pl-2"> html</sapn>
+              <span className="pl-2"> html</span>
             </li>
-            <li class="p-2 flex items-center bg-white text-pink-500 md:p-4">
+            <li className="p-2 flex items-center bg-white text-pink-500 md:p-4">
               <MdDoubleArrow />
-              <sapn class="pl-2"> js</sapn>
+              <span className="pl-2"> js</span>
             </li>
-            <li class="p-2 flex items-center bg-pink-500 text-white md:p-4">
+            <li className="p-2 flex items-center bg-pink-500 text-white md:p-4">
               <MdDoubleArrow />
-              <sapn class="pl-2">c++</sapn>
+              <span className="pl-2">c++</span>
             </li>
-            <li class="p-2 flex items-center bg-white text-pink-500 md:p-4">
+            <li className="p-2 flex items-center bg-white text-pink-500 md:p-4">
               <MdDoubleArrow />
-              <sapn class="pl-2">sql</sapn>
+              <span className="pl-2">sql</span>
             </li>
-            <li class="p-2 flex items-center bg-pink-500 text-white md:p-4">
+            <li className="p-2 flex items-center bg-pink-500 text-white md:p-4">
               <MdDoubleArrow />
-              <sapn class="pl-2"> css</sapn>
+              <span className="pl-2"> css</span>
             </li>
-            <li class="p-2 flex items-center bg-white text-pink-500 md:p-4">
+            <li className="p-2 flex items-center bg-white text-pink-500 md:p-4">
               <MdDoubleArrow />
-              <sapn class="pl-2">github</sapn>
+              <span className="pl-2">github</span>
             </li>
-            <li class="p-2 flex items-center bg-pink-500 text-white md:p-4">
+            <li className="p-2 flex items-center bg-pink-500 text-white md:p-4">
               <MdDoubleArrow />
-              <sapn class="pl-2">react js</sapn>
+              <span className="pl-2">react js</span>
             </li>
           </ul>
-          <ul class="w-80">
+          <ul className="w-80">
             {" "}
-            <li class="p-2 flex items-center bg-white text-pink-500 md:p-4">
+            <li className="p-2 flex items-center bg-white text-pink-500 md:p-4">
               <MdDoubleArrow />
-              <sapn class="pl-2"> vue js</sapn>
+              <span className="pl-2"> vue js</span>
             </li>
-            <li class="p-2 flex items-center bg-pink-500 text-white md:p-4">
+            <li className="p-2 flex items-center bg-pink-500 text-white md:p-4">
               <MdDoubleArrow />
-              <sapn class="pl-2"> tailwind css</sapn>
+              <span className="pl-2"> tailwind css</span>
             </li>
-            <li class="p-2 flex items-center bg-white text-pink-500 md:p-4">
+            <li className="p-2 flex items-center bg-white text-pink-500 md:p-4">
               <MdDoubleArrow />
-              <sapn class="pl-2">graph ql</sapn>
+              <span className="pl-2">graph ql</span>
             </li>
-            <li class="p-2 flex items-center bg-pink-500 text-white md:p-4">
+            <li className="p-2 flex items-center bg-pink-500 text-white md:p-4">
               <MdDoubleArrow />
-              <sapn class="pl-2">postgres</sapn>
+              <span className="pl-2">postgres</span>
             </li>
-            <li class="p-2 flex items-center bg-white text-pink-500 md:p-4">
+            <li className="p-2 flex items-center bg-white text-pink-500 md:p-4">
               <MdDoubleArrow />
-              <sapn class="pl-2">docker</sapn>
+              <span className="pl-2">docker</span>
             </li>
-            <li class="p-2 flex items-center bg-pink-500 text-white md:p-4">
+            <li className="p-2 flex items-center bg-pink-500 text-white md:p-4">
               <MdDoubleArrow />
-              <sapn class="pl-2">mui</sapn>
+              <span className="pl-2">mui</span>
             </li>
-            <li class="p-2 flex items-center bg-white text-pink-500  md:p-4">
+            <li className="p-2 flex items-center bg-white text-pink-500  md:p-4">
               <MdDoubleArrow />
-              <sapn class="pl-2">sass</sapn>
+              <span className="pl-2">sass</span>
             </li>
           </ul>
         </div>
