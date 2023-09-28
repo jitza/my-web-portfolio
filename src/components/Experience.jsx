@@ -10,69 +10,64 @@ const Experience = () => {
           Tech I've Work With
         </h1>
         <img src={test5} alt="experiences" className="absolute-center" />
-        <div className="pt-6 uppercase font-bold md:flex flex-col-2">
-          <ul className="w-80">
-            <li className="p-2 flex items-center bg-pink-500 text-white md:p-4">
-              <MdDoubleArrow />
-              <span className="pl-2"> html</span>
-            </li>
-            <li className="p-2 flex items-center bg-white text-pink-500 md:p-4">
-              <MdDoubleArrow />
-              <span className="pl-2"> js</span>
-            </li>
-            <li className="p-2 flex items-center bg-pink-500 text-white md:p-4">
-              <MdDoubleArrow />
-              <span className="pl-2">c++</span>
-            </li>
-            <li className="p-2 flex items-center bg-white text-pink-500 md:p-4">
-              <MdDoubleArrow />
-              <span className="pl-2">sql</span>
-            </li>
-            <li className="p-2 flex items-center bg-pink-500 text-white md:p-4">
-              <MdDoubleArrow />
-              <span className="pl-2"> css</span>
-            </li>
-            <li className="p-2 flex items-center bg-white text-pink-500 md:p-4">
-              <MdDoubleArrow />
-              <span className="pl-2">github</span>
-            </li>
-            <li className="p-2 flex items-center bg-pink-500 text-white md:p-4">
-              <MdDoubleArrow />
-              <span className="pl-2">react js</span>
-            </li>
-          </ul>
-          <ul className="w-80">
-            {" "}
-            <li className="p-2 flex items-center bg-white text-pink-500 md:p-4">
-              <MdDoubleArrow />
-              <span className="pl-2"> vue js</span>
-            </li>
-            <li className="p-2 flex items-center bg-pink-500 text-white md:p-4">
-              <MdDoubleArrow />
-              <span className="pl-2"> tailwind css</span>
-            </li>
-            <li className="p-2 flex items-center bg-white text-pink-500 md:p-4">
-              <MdDoubleArrow />
-              <span className="pl-2">graph ql</span>
-            </li>
-            <li className="p-2 flex items-center bg-pink-500 text-white md:p-4">
-              <MdDoubleArrow />
-              <span className="pl-2">postgres</span>
-            </li>
-            <li className="p-2 flex items-center bg-white text-pink-500 md:p-4">
-              <MdDoubleArrow />
-              <span className="pl-2">docker</span>
-            </li>
-            <li className="p-2 flex items-center bg-pink-500 text-white md:p-4">
-              <MdDoubleArrow />
-              <span className="pl-2">mui</span>
-            </li>
-            <li className="p-2 flex items-center bg-white text-pink-500  md:p-4">
-              <MdDoubleArrow />
-              <span className="pl-2">sass</span>
-            </li>
-          </ul>
-        </div>
+        {/* <ul className="uppercase font-bold">
+          <li>
+            <MdDoubleArrow />
+            html
+          </li>
+          <li>
+            <MdDoubleArrow />
+            js
+          </li>
+          <li>
+            <MdDoubleArrow />
+            c++
+          </li>
+          <li>
+            <MdDoubleArrow />
+            sql
+          </li>
+          <li>
+            <MdDoubleArrow />
+            css
+          </li>
+          <li>
+            <MdDoubleArrow />
+            github
+          </li>
+          <li>
+            <MdDoubleArrow />
+            react js
+          </li>
+          <li>
+            <MdDoubleArrow />
+            vue js
+          </li>
+          <li>
+            <MdDoubleArrow />
+            tailwind css
+          </li>
+          <li>
+            <MdDoubleArrow />
+            graph ql
+          </li>
+          <li>
+            <MdDoubleArrow />
+            postgres
+          </li>
+          <li>
+            <MdDoubleArrow />
+            docker
+          </li>
+          <li>
+            <MdDoubleArrow />
+            mui
+          </li>
+          <li>
+            <MdDoubleArrow />
+            sass
+          </li>
+        </ul> */}
       </section>
     </div>
   );
