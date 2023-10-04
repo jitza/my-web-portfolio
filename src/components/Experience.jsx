@@ -67,9 +67,9 @@ const Experience = () => {
         <h1 className="text-xl font-bold uppercase underline underline-offset-8 text-center md:text-2xl">
           Tech I've Work With
         </h1>
-        <div className=" flex justify-center items-center">
+        <div className="relative flex justify-center items-center">
           <img src={test6} alt="experiences" />
-          <ul className="uppercase font-bold text-xl absolute left-96">
+          <ul className="uppercase font-bold absolute md:text-xl">
             {experiences.map(({ id, name }) => (
               <li key={id} className="flex items-center">
                 <MdDoubleArrow />
