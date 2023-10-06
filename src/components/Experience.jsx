@@ -66,19 +66,17 @@ const Experience = () => {
       <h1 className="absolute top-48 text-xl font-bold uppercase underline underline-offset-8 text-center md:text-2xl">
         Tech I've Work With
       </h1>
-      <section>
-        <div className="relative flex justify-center items-center">
-          <img src={test6} alt="experiences" />
-          <ul className="uppercase font-bold absolute md:text-xl">
-            {experiences.map(({ id, name }) => (
-              <li key={id} className="flex items-center">
-                <MdDoubleArrow />
-                {name}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
+      <div className="relative flex justify-center items-center">
+        <img src={test6} alt="experiences" className="hidden md:flex" />
+        <ul className="uppercase font-bold absolute md:text-xl">
+          {experiences.map(({ id, name }) => (
+            <li key={id} className="flex items-center">
+              <MdDoubleArrow />
+              {name}
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
