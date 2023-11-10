@@ -30,7 +30,7 @@ const SocialLinks = () => {
           <BsInstagram />
         </>
       ),
-      href: "https://instagram.com/jitzait?igshid=YmMyMTA2M2Y=",
+      href: "https://instagram.com/_jitza?igshid=YmMyMTA2M2Y=",
     },
     {
       id: 4,
