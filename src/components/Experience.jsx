@@ -32,6 +32,9 @@ const Experience = () => {
       id: 7,
       name: "tailwind",
     },
+  ];
+
+  const experiences2 = [
     {
       id: 8,
       name: "graph ql",
@@ -68,14 +71,28 @@ const Experience = () => {
       </h1>
       <div className="relative flex justify-center items-center">
         <img src={test6} alt="experiences" className="hidden md:flex" />
-        <ul className="uppercase font-bold absolute md:text-xl">
-          {experiences.map(({ id, name }) => (
-            <li key={id} className="flex items-center">
-              <MdDoubleArrow />
-              {name}
-            </li>
-          ))}
-        </ul>
+        <div className="uppercase font-bold absolute grid grid-cols-2 gap-20 md:text-2xl">
+          <ul>
+            {experiences.map(({ id, name }) => (
+              <li key={id}>
+                <div className="flex items-center p-4">
+                  <MdDoubleArrow />
+                  {name}
+                </div>
+              </li>
+            ))}
+          </ul>
+          <ul>
+            {experiences2.map(({ id, name }) => (
+              <li key={id}>
+                <div className="flex items-center p-4">
+                  <MdDoubleArrow />
+                  {name}
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );
