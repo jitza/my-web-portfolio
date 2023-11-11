@@ -27,7 +27,7 @@ const App = () => (
       navigationTooltips={anchors}
       render={({ state, fullpageApi }) => {
         return (
-          <div class="bg-gradient-to-b from-slate-900 to-gray-900 text-gray-500">
+          <div className="bg-gradient-to-b from-slate-900 to-gray-900 text-gray-500">
             <div className="section">
               <Home />
             </div>

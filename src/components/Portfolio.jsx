@@ -88,6 +88,9 @@ const Portfolio = () => {
 
   return (
     <div className="h-screen w-full flex justify-center items-center ">
+      <h1 className="absolute top-48 text-xl font-bold uppercase underline underline-offset-8 text-center md:text-2xl">
+        My Personal Work
+      </h1>
       <Swiper
         style={{
           "--swiper-pagination-color": "#fff",
@@ -110,16 +113,13 @@ const Portfolio = () => {
         modules={[EffectCoverflow, Pagination, Keyboard, Autoplay]}
       >
         {projects.map(({ id, name, img, link }) => (
-          <SwiperSlide>
+          <SwiperSlide key={id}>
             <a href={link} target="_blank">
               <img src={img} />
             </a>
           </SwiperSlide>
         ))}
       </Swiper>
-      <h1 className="absolute bottom-10 text-xl font-bold uppercase underline underline-offset-8 text-center md:text-2xl">
-        My Personal Work
-      </h1>
     </div>
   );
 };
