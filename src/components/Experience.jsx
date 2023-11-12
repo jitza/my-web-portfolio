@@ -66,10 +66,10 @@ const Experience = () => {
   ];
   return (
     <div className="h-screen w-full flex justify-center items-center">
-      <h1 className="absolute top-24 text-xl font-bold uppercase underline underline-offset-8 text-center md:text-2xl">
+      <h1 className="absolute top-24 text-xl font-bold uppercase underline underline-offset-8 text-center md:text-2xl md:top-24">
         Tech I've Work With
       </h1>
-      <div className="relative flex justify-center items-center">
+      <div className="md:relative flex justify-center items-center">
         <img
           src={test6}
           alt="experiences"
