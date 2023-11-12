@@ -22,6 +22,7 @@ module.exports = {
       },
       fontFamily: {
         signature: ["Great Vibes"],
+        heading: ["Agbalumo"],
       },
     },
   },

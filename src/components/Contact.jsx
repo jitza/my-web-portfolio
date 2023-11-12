@@ -5,7 +5,7 @@ import { CiPaperplane } from "react-icons/ci";
 const Contact = () => {
   return (
     <div className="h-screen w-full flex justify-center items-center">
-      <h1 className="absolute top-32 text-xl font-bold uppercase underline underline-offset-8 text-center md:text-2xl">
+      <h1 className="absolute font-heading top-32 text-xl font-bold uppercase underline underline-offset-8 text-center md:text-2xl">
         How to get In Touch With Me!
       </h1>
       <form
