@@ -1,6 +1,6 @@
 import React from "react";
 import { MdDoubleArrow } from "react-icons/md";
-import test6 from "../assets/bg/test6.png";
+import experienceBg from "../assets/experienceBg.png";
 
 const Experience = () => {
   const experiences = [
@@ -71,7 +71,7 @@ const Experience = () => {
       </h1>
       <div className="md:relative flex justify-center items-center">
         <img
-          src={test6}
+          src={experienceBg}
           alt="experiences"
           className="hidden md:flex"
           width={1200}
