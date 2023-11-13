@@ -9,18 +9,18 @@ const About = () => {
         </h1>
         <div className="p-6 md:text-xl">
           Hello, I am Jenny, a versatile creative professional with expertise in
-          front-end development, graphic design, and app development. I have a
-          passion for tackling design challenges, implementing innovative web
-          features, and creating applications using a variety of development
-          tools and techniques. While my primary focus centers on front-end
-          development, I also lend my creative talents to the realms of
-          advertising and marketing as a graphic designer. My journey has been
-          characterized by active involvement in numerous app projects, each
-          contributing to the depth and breadth of my knowledge in the field of
-          app development. My unwavering commitment to self-improvement fuels my
-          passion for continuous skill enhancement and professional advancement.
-          I have full confidence in my capacity to utilize my expertise and
-          abilities for ongoing personal and career growth.
+          web development, graphic design, and app development. I have a passion
+          for tackling design challenges, implementing innovative web features,
+          and creating applications using a variety of development tools and
+          techniques. While my primary focus centers on front-end development, I
+          also lend my creative talents to the realms of advertising and
+          marketing as a graphic designer. My journey has been characterized by
+          active involvement in numerous app projects, each contributing to the
+          depth and breadth of my knowledge in the field of app development. My
+          unwavering commitment to self-improvement fuels my passion for
+          continuous skill enhancement and professional advancement. I have full
+          confidence in my capacity to utilize my expertise and abilities for
+          ongoing personal and career growth.
         </div>
       </section>
     </div>

@@ -20,7 +20,7 @@ const Home = () => {
           <h1 className="text-6xl font-bold md:text-7xl hover:text-pink-900">
             Jenny Itza
           </h1>
-          <h2 className="text-xl font-bold uppercase">Front End Developer</h2>
+          <h2 className="text-xl font-bold uppercase">Web Developer</h2>
           <SocialLinks />
           <a
             href="#portfolio"
