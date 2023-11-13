@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div className="h-screen w-full flex justify-center items-center">
       <h1 className="absolute font-heading top-32 text-xl font-bold uppercase underline underline-offset-8 text-center md:text-2xl">
-        How to get In Touch With Me!
+        Contact Me!
       </h1>
       <form
         className="flex flex-col p-6 px-10 w-full md:w-1/2 md:border-2"
