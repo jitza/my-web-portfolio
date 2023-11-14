@@ -11,7 +11,7 @@ const Services = () => {
   ];
   return (
     <div className="h-screen w-full flex justify-center items-center">
-      <section>
+      <section className="animated-right">
         <h1 className="text-xl font-heading font-bold uppercase underline underline-offset-8 text-center md:text-2xl">
           What I do
         </h1>

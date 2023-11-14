@@ -92,6 +92,7 @@ const Portfolio = () => {
         My Personal Work
       </h1>
       <Swiper
+        className="animated-left"
         style={{
           "--swiper-pagination-color": "#fff",
           "--swiper-pagination-bullet-inactive-color": "#fff",

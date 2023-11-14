@@ -69,7 +69,7 @@ const Experience = () => {
       <h1 className="absolute top-24 text-xl font-heading font-bold uppercase underline underline-offset-8 text-center md:text-2xl md:top-24">
         Tech I've Work With
       </h1>
-      <div className="md:relative flex justify-center items-center">
+      <div className="animated-right md:relative flex justify-center items-center">
         <img
           src={experienceBg}
           alt="experiences"
