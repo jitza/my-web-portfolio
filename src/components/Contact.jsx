@@ -1,6 +1,6 @@
 import React from "react";
 import { BsChevronDoubleUp } from "react-icons/bs";
-import { CiPaperplane } from "react-icons/ci";
+import { FaPaperPlane } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -33,7 +33,8 @@ const Contact = () => {
           className="p-2 bg-transparent border-b-2 text-white focus:outline-none"
         />
         <button className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
-          <span className="pr-2">Send</span> <CiPaperplane />
+          <span className="pr-1">Send</span>
+          <FaPaperPlane />
         </button>
       </form>
       <a
