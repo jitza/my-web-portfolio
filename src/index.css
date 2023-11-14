@@ -40,6 +40,30 @@ h3 {
   height: 100vh;
 }
 
+.animated-left {
+  position: absolute;
+  left: 0;
+  transform: translate3d(-100vw, 0, 0);
+  transition: transform 600ms ease;
+  right: 0;
+}
+
+.fp-section.active .animated-left {
+  transform: translate3d(0, 0, 0);
+}
+
+.animated-right {
+  position: absolute;
+  right: 0;
+  transform: translate3d(100vw, 0, 0);
+  transition: transform 600ms ease;
+  left: 0;
+}
+
+.fp-section.active .animated-right {
+  transform: translate3d(0, 0, 0);
+}
+
 .fp-section {
   /* text-align: center; */
 }
