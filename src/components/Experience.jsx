@@ -89,7 +89,7 @@ const Experience = () => {
           </ul>
           <ul>
             {experiences2.map(({ id, name }) => (
-              <li key={id} className="flex justify-end">
+              <li key={id} className="flex justify-center">
                 <div className="flex items-center p-4">
                   <MdDoubleArrow />
                   {name}
