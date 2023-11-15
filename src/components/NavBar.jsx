@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes, FaLinkedinIn } from "react-icons/fa";
 import { IoHome } from "react-icons/io5";
 import { AiFillFolderOpen } from "react-icons/ai";
-import { BsPersonLinesFill } from "react-icons/bs";
+import { BsPersonLinesFill, BsLinkedin } from "react-icons/bs";
 import { BiMailSend, BiCodeBlock } from "react-icons/bi";
 import { VscTools } from "react-icons/vsc";
 import myLogo from "../assets/myLogo.png";
@@ -59,7 +59,7 @@ const NavBar = () => {
         />
       </a>
 
-      <ul className="hidden md:flex pr-4">
+      <ul className="hidden md:flex pr-4 items-end">
         {links.map(({ id, name, link, icon: Icon }) => (
           <li
             key={id}
@@ -68,6 +68,9 @@ const NavBar = () => {
             <a href={link}>{name}</a>
           </li>
         ))}
+        <a href="https://www.linkedin.com/in/jitza" target="_blank">
+          <BsLinkedin size={30} className="text-teal-500 cursor-pointer" />
+        </a>
       </ul>
 
       <div
