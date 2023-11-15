@@ -5,7 +5,7 @@ import { FaPaperPlane } from "react-icons/fa";
 const Contact = () => {
   return (
     <div className="h-screen w-full flex justify-center items-center">
-      <h1 className="absolute font-heading top-40 text-xl font-bold uppercase underline underline-offset-8 text-center md:text-2xl">
+      <h1 className="absolute font-heading top-32 text-xl font-bold uppercase underline underline-offset-8 text-center md:text-2xl">
         Contact Me!
       </h1>
       <form
