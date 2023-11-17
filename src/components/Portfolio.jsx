@@ -88,10 +88,11 @@ const Portfolio = () => {
 
   return (
     <div className="h-screen w-full flex justify-center items-center ">
-      <h1 className="absolute top-48 text-xl font-bold uppercase underline underline-offset-8 text-center md:text-2xl">
+      <h1 className="absolute top-32 font-heading text-xl font-bold uppercase underline underline-offset-8 text-center md:text-2xl">
         My Personal Work
       </h1>
       <Swiper
+        className="animated-left"
         style={{
           "--swiper-pagination-color": "#fff",
           "--swiper-pagination-bullet-inactive-color": "#fff",

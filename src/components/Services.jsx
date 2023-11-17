@@ -11,8 +11,8 @@ const Services = () => {
   ];
   return (
     <div className="h-screen w-full flex justify-center items-center">
-      <section>
-        <h1 className="text-xl font-bold uppercase underline underline-offset-8 text-center md:text-2xl">
+      <section className="animated-right">
+        <h1 className="text-xl font-heading font-bold uppercase underline underline-offset-8 text-center md:text-2xl">
           What I do
         </h1>
         <div className="p-6 grid grid-row-3 gap-6 md:flex justify-evenly">

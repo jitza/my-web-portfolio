@@ -1,6 +1,6 @@
 import React from "react";
 import { MdDoubleArrow } from "react-icons/md";
-import test6 from "../assets/bg/test6.png";
+import experienceBg from "../assets/experienceBg.png";
 
 const Experience = () => {
   const experiences = [
@@ -22,11 +22,11 @@ const Experience = () => {
     },
     {
       id: 5,
-      name: "react.js",
+      name: "react js",
     },
     {
       id: 6,
-      name: "vue.js",
+      name: "vue js",
     },
     {
       id: 7,
@@ -35,14 +35,6 @@ const Experience = () => {
   ];
 
   const experiences2 = [
-    {
-      id: 8,
-      name: "graph ql",
-    },
-    {
-      id: 9,
-      name: "postgresql",
-    },
     {
       id: 10,
       name: "c++",
@@ -63,15 +55,28 @@ const Experience = () => {
       id: 14,
       name: "mui",
     },
+    {
+      id: 8,
+      name: "graph ql",
+    },
+    {
+      id: 9,
+      name: "postgre sql",
+    },
   ];
   return (
     <div className="h-screen w-full flex justify-center items-center">
-      <h1 className="absolute top-48 text-xl font-bold uppercase underline underline-offset-8 text-center md:text-2xl">
+      <h1 className="absolute top-32 text-xl font-heading font-bold uppercase underline underline-offset-8 text-center md:text-2xl">
         Tech I've Work With
       </h1>
-      <div className="relative flex justify-center items-center">
-        <img src={test6} alt="experiences" className="hidden md:flex" />
-        <div className="uppercase font-bold absolute grid grid-cols-2 gap-20 md:text-2xl">
+      <div className="animated-right md:relative flex justify-center items-center">
+        <img
+          src={experienceBg}
+          alt="experiences"
+          className="hidden md:flex"
+          width={1200}
+        />
+        <div className="uppercase font-bold absolute grid grid-cols-2 gap-10 md:text-2xl">
           <ul>
             {experiences.map(({ id, name }) => (
               <li key={id}>
@@ -84,7 +89,7 @@ const Experience = () => {
           </ul>
           <ul>
             {experiences2.map(({ id, name }) => (
-              <li key={id}>
+              <li key={id} className="flex justify-center">
                 <div className="flex items-center p-4">
                   <MdDoubleArrow />
                   {name}

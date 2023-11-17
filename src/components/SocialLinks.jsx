@@ -1,5 +1,5 @@
 import React from "react";
-import { BsFacebook, BsInstagram, BsGithub, BsSnapchat } from "react-icons/bs";
+import { BsFacebook, BsInstagram, BsGithub } from "react-icons/bs";
 import { FaSnapchat } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 

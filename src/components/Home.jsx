@@ -1,7 +1,7 @@
 import React from "react";
 import SocialLinks from "./SocialLinks";
 import myProfile from "../assets/myProfile.png";
-import Profile from "../assets/profile.jpg";
+import testProfile from "../assets/testProfile.jpg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { BsChevronDoubleDown } from "react-icons/bs";
 
@@ -11,16 +11,16 @@ const Home = () => {
       <div className="flex flex-col md:grid grid-cols-2 grid-flow-row">
         <section>
           <img
-            src={Profile}
+            src={testProfile}
             alt="myProfile"
             className="h-96 p-6 md:absolute md:-translate-y-24"
           />
         </section>
         <section className="grid grid-row-4 gap-3">
-          <h1 className="text-6xl font-bold md:text-7xl hover:text-pink-900">
+          <h1 className="text-6xl font-bold md:text-7xl hover:text-rose-500">
             Jenny Itza
           </h1>
-          <h2 className="text-xl font-bold uppercase">Front End Developer</h2>
+          <h2 className="text-xl font-bold uppercase">Web Developer</h2>
           <SocialLinks />
           <a
             href="#portfolio"
