@@ -73,7 +73,7 @@ h3 {
 }
 
 #fp-nav ul li a span {
-  background-color: white;
+  background-color: white !important;
 }
 
 .swiper {
