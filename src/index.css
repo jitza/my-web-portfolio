@@ -93,3 +93,18 @@ h3 {
   display: block;
   width: 100%;
 } */
+
+/* @keyframes down {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.slide-down {
+  overflow: hidden;
+  animation: down 0.8s ease-in-out;
+  height: 50vh;
+} */
