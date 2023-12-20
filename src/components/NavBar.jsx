@@ -5,7 +5,7 @@ import { AiFillFolderOpen } from "react-icons/ai";
 import { BsPersonLinesFill, BsLinkedin } from "react-icons/bs";
 import { BiMailSend, BiCodeBlock } from "react-icons/bi";
 import { VscTools } from "react-icons/vsc";
-import myLogo from "../assets/myLogo.png";
+import myLogo from "../assets/myLogo2.png";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -49,9 +49,9 @@ const NavBar = () => {
   ];
 
   return (
-    <div className="w-full h-24 flex justify-end items-center fixed z-10 bg-slate-900">
-      <a href="#home" className="absolute left-2 -top-1">
-        <img src={myLogo} width="250" height="400" />
+    <div className="w-full h-16 flex justify-end items-center fixed z-10 bg-slate-900">
+      <a href="#home" className="absolute left-2 top-1">
+        <img src={myLogo} width="180" />
       </a>
 
       <ul className="hidden md:flex pr-4 items-end">
