@@ -66,7 +66,7 @@ const Experience = () => {
   ];
   return (
     <div className="h-screen w-full flex justify-center items-center">
-      <h1 className="absolute top-32 text-xl font-heading font-bold uppercase underline underline-offset-8 text-center md:text-2xl">
+      <h1 className="absolute top-28 text-xl font-heading font-bold uppercase underline underline-offset-8 text-center md:text-2xl">
         Tech I've Work With
       </h1>
       <div className="animated-right md:relative flex justify-center items-center">
