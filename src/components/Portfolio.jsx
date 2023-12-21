@@ -88,7 +88,7 @@ const Portfolio = () => {
 
   return (
     <div className="h-screen w-full flex justify-center items-center ">
-      <h1 className="absolute top-16 font-heading text-xl font-bold uppercase underline underline-offset-8 text-center md:text-2xl md:top-24">
+      <h1 className="absolute top-20 font-heading text-xl font-bold uppercase underline underline-offset-8 text-center md:text-2xl md:top-20">
         My Personal Work
       </h1>
       <Swiper
