@@ -8,16 +8,17 @@ const twinkle = keyframes`
     }
     100% {
         opacity: 1;
-
-    transform: scale(1);
+        transform: scale(1);
    }
 `;
 
 const Star = styled.div`
   position: absolute;
   background-color: #fff;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  amimation: ${twinkle} is infinite alternate;
+  animation: ${twinkle} 1s infinite alternate;
 `;
 
 export default Star;
