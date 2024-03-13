@@ -6,6 +6,8 @@ import About from "./components/About";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import ReactFullpage from "@fullpage/react-fullpage";
+import StarryBackground from "./components/StarryBackground";
+import Star from "./components/Star";
 import "./index.css";
 
 const anchors = [
@@ -19,7 +21,11 @@ const anchors = [
 
 const App = () => (
   <>
-    <NavBar />
+    <StarryBackground />
+    <h1 className="text-white text-center text-4xl">Jenny</h1>
+    {/* <Star /> */}
+
+    {/* <NavBar />
     <ReactFullpage
       licenseKey={"gplv3-license"}
       anchors={anchors}
@@ -49,7 +55,7 @@ const App = () => (
           </div>
         );
       }}
-    />
+    /> */}
   </>
 );
 
