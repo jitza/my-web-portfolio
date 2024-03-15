@@ -20,13 +20,40 @@ const StarryBackground = () => {
 
     if (!container) return;
 
+    const containerWidth = container.clientWidth;
+    const containerHeight = container.clientHeight;
+
+    const twinkle = `
+      @keyframes twinkle {
+        0% {
+          opacity: 0;
+          transform: scale(0);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+    `;
+
+    const styleSheet = document.styleSheets[0];
+    styleSheet.insertRule(twinkle, styleSheet.cssRules.length);
+
     const createStar = () => {
       const star = document.createElement("div");
       const size = Math.random() * 3 + 1;
+      const left = Math.random() * containerWidth;
+      const top = Math.random() * containerHeight;
+
+      star.style.position = "absolute";
+      star.style.backgroundColor = "#fff";
+      star.style.borderRadius = "50%";
       star.style.width = `${size}px`;
       star.style.height = `${size}px`;
-      star.style.left = `${Math.random() * 100}%`;
-      star.style.top = `${Math.random() * 100}%`;
+      star.style.left = `${left}px`;
+      star.style.top = `${top}px`;
+      star.style.animation = `twinkle 1s infinite`;
+
       container.appendChild(star);
     };
 
@@ -35,13 +62,7 @@ const StarryBackground = () => {
     }
   }, []);
 
-  return (
-    <Container id="stars-container">
-      {[...Array(100)].map((_, index) => (
-        <Star key={index} />
-      ))}
-    </Container>
-  );
+  return <Container id="stars-container" />;
 };
 
 export default StarryBackground;
