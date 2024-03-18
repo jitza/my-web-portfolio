@@ -52,7 +52,7 @@ const StarryBackground = () => {
       star.style.height = `${size}px`;
       star.style.left = `${left}px`;
       star.style.top = `${top}px`;
-      star.style.animation = `twinkle 1s infinite`;
+      star.style.animation = `twinkle 3s infinite`;
 
       container.appendChild(star);
     };
