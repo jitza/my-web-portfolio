@@ -14,7 +14,7 @@ const Container = styled.div`
 
 const MovingParticlesBg = () => {
   useEffect(() => {
-    const numStars = 100;
+    const numStars = 200;
     const container = document.getElementById("stars-container");
 
     if (!container) return;
@@ -38,12 +38,14 @@ const MovingParticlesBg = () => {
     const styleSheet = document.styleSheets[0];
     styleSheet.insertRule(twinkle, styleSheet.cssRules.length);
 
-    const createStar = () => {
+    for (let i = 0; i < numStars; i++) {
       const star = document.createElement("div");
       const size = Math.random() * 3 + 1;
       const left = Math.random() * containerWidth;
       const top = Math.random() * containerHeight;
-      const duration = Math.random() * 10 + 5;
+      const duration = Math.random() * 10 + 5; // Random duration for movement
+      const translateX = Math.random() * containerWidth - left;
+      const translateY = Math.random() * containerHeight - top;
 
       star.style.position = "absolute";
       star.style.backgroundColor = "#fff";
@@ -52,25 +54,21 @@ const MovingParticlesBg = () => {
       star.style.height = `${size}px`;
       star.style.left = `${left}px`;
       star.style.top = `${top}px`;
-      star.style.animation = `twinkle 3s infinite, moveStar ${duration}s linear infinite`;
+      star.style.animation = `twinkle 3s infinite, moveStar${i} 20s linear infinite`;
 
       container.appendChild(star);
-    };
 
-    const moveStarKeyframes = `
-      @keyframes moveStar {
-        from {
-          transform: translate(0, 0);
+      const moveStarKeyframes = `
+        @keyframes moveStar${i} {
+          from {
+            transform: translate(0, 0);
+          }
+          to {
+            transform: translate(${translateX}px, ${translateY}px);
+          }
         }
-        to {
-          transform: translate(${containerWidth}px, ${containerHeight}px);
-        }
-      }
-    `;
-    styleSheet.insertRule(moveStarKeyframes, styleSheet.cssRules.length);
-
-    for (let i = 0; i < numStars; i++) {
-      createStar();
+      `;
+      styleSheet.insertRule(moveStarKeyframes, styleSheet.cssRules.length);
     }
   }, []);
 
