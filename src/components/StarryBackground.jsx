@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
-import Star from "./Star";
 
 const Container = styled.div`
   position: fixed;
