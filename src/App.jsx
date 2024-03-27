@@ -7,8 +7,9 @@ import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import ReactFullpage from "@fullpage/react-fullpage";
 import StarryBackground from "./components/StarryBackground";
-import Star from "./components/Star";
 import "./index.css";
+import MovingParticlesBg from "./components/MovingParticlesBg";
+import MeteoriteBg from "./components/MeteoriteBg";
 
 const anchors = [
   "home",
@@ -21,10 +22,10 @@ const anchors = [
 
 const App = () => (
   <>
-    <StarryBackground />
-    <h1 className="text-white text-center text-4xl">Jenny</h1>
-    {/* <Star /> */}
-
+    {/* <StarryBackground /> */}
+    {/* <MeteoriteBg /> */}
+    <MovingParticlesBg />
+    <h1 className="text-white text-center text-4xl">testing</h1>
     {/* <NavBar />
     <ReactFullpage
       licenseKey={"gplv3-license"}
