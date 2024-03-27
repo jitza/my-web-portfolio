@@ -54,7 +54,7 @@ const MovingParticlesBg = () => {
       star.style.height = `${size}px`;
       star.style.left = `${left}px`;
       star.style.top = `${top}px`;
-      star.style.animation = `twinkle 3s infinite, moveStar${i} 20s linear infinite`;
+      star.style.animation = `twinkle 3s infinite, moveStar${i} 22s linear infinite`;
 
       container.appendChild(star);
 
