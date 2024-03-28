@@ -14,7 +14,7 @@ const Container = styled.div`
 
 const MovingParticlesBg = () => {
   useEffect(() => {
-    const numStars = 200;
+    const numStars = 150;
     const container = document.getElementById("stars-container");
 
     if (!container) return;
@@ -43,7 +43,7 @@ const MovingParticlesBg = () => {
       const size = Math.random() * 3 + 1;
       const left = Math.random() * containerWidth;
       const top = Math.random() * containerHeight;
-      const duration = Math.random() * 10 + 5; // Random duration for movement
+      const duration = Math.random() * 20 + 10; // Random duration for movement
       const translateX = Math.random() * containerWidth - left;
       const translateY = Math.random() * containerHeight - top;
 
@@ -54,7 +54,7 @@ const MovingParticlesBg = () => {
       star.style.height = `${size}px`;
       star.style.left = `${left}px`;
       star.style.top = `${top}px`;
-      star.style.animation = `twinkle 3s infinite, moveStar${i} 22s linear infinite`;
+      star.style.animation = `twinkle 2s infinite, moveStar${i} ${duration}s linear infinite`;
 
       container.appendChild(star);
 
