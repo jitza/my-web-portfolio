@@ -22,28 +22,15 @@ const MovingParticlesBg = () => {
     const containerWidth = container.clientWidth;
     const containerHeight = container.clientHeight;
 
-    const twinkle = `
-      @keyframes twinkle {
-        0% {
-          opacity: 0.5;
-          transform: scale(0.5);
-        }
-        100% {
-          opacity: 1;
-          transform: scale(1);
-        }
-      }
-    `;
-
     const styleSheet = document.styleSheets[0];
-    styleSheet.insertRule(twinkle, styleSheet.cssRules.length);
 
     for (let i = 0; i < numStars; i++) {
       const star = document.createElement("div");
       const size = Math.random() * 3 + 1;
       const left = Math.random() * containerWidth;
       const top = Math.random() * containerHeight;
-      const duration = Math.random() * 20 + 10; // Random duration for movement
+      const speed = Math.random() * 20 + 10;
+      const duration = Math.random() * 5 + 2;
       const translateX = Math.random() * containerWidth - left;
       const translateY = Math.random() * containerHeight - top;
 
@@ -54,7 +41,7 @@ const MovingParticlesBg = () => {
       star.style.height = `${size}px`;
       star.style.left = `${left}px`;
       star.style.top = `${top}px`;
-      star.style.animation = `twinkle 2s infinite, moveStar${i} ${duration}s linear infinite`;
+      star.style.animation = `twinkle${i} ${duration}s infinite, moveStar${i} ${speed}s linear infinite`;
 
       container.appendChild(star);
 
@@ -69,6 +56,20 @@ const MovingParticlesBg = () => {
         }
       `;
       styleSheet.insertRule(moveStarKeyframes, styleSheet.cssRules.length);
+
+      const twinkleKeyframes = `
+        @keyframes twinkle${i} {
+          0% {
+            transform: scale(0.5);
+            opacity: 0.5;
+          }
+          100% {
+            transform: scale(1);
+            opacity: 1;
+          }
+        }
+      `;
+      styleSheet.insertRule(twinkleKeyframes, styleSheet.cssRules.length);
     }
   }, []);
 
