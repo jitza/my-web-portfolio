@@ -9,7 +9,7 @@ const Container = styled.div`
   height: 100%;
   z-index: -1;
   pointer-events: none;
-  background-color: black;
+  background-color: #04062F;; 
 `;
 
 const MovingParticlesBg = () => {
