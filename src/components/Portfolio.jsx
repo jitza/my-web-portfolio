@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
+import hangman_game_vid from "../assets/projects_vid/hangman_game_vid.mp4";
 import shooting_game_2 from "../assets/projects/shooting_game_2.jpg";
 import shooting_game from "../assets/projects/shooting_game.jpg";
 import hangman_game from "../assets/projects/hangman_game.jpg";
@@ -25,6 +26,13 @@ const Portfolio = () => {
       link: "https://github.com/jitza/Hangman.git",
     },
     {
+      id: 12,
+      name: "Hangman Game",
+      vid: hangman_game_vid,
+      img: hangman_game,
+      link: "https://github.com/jitza/Hangman.git",
+    },
+    {
       id: 2,
       name: "Shooting Game",
       img: shooting_game,
@@ -34,7 +42,7 @@ const Portfolio = () => {
     //   id: 3,
     //   name: "Shooting Game vol2",
     //   img: shooting_game_2,
-    //   link: "https://github.com/jitza/ShootingGameVol2.git",
+    //   link: "https://github.com/jitza/ShootingGameVol2.git", 
     // },
     {
       id: 4,
@@ -113,10 +121,21 @@ const Portfolio = () => {
         pagination={{ clickable: true }}
         modules={[EffectCoverflow, Pagination, Keyboard, Autoplay]}
       >
-        {projects.map(({ id, name, img, link }) => (
+        {projects.map(({ id, name, img, link, vid}) => (
           <SwiperSlide key={id}>
             <a href={link} target="_blank">
-              <img src={img} />
+              {vid ? (
+                <video
+                  className="w-full h-full object-cover"
+                  autoPlay
+                  loop
+                  muted
+                >
+                  <source src={vid} type="video/mp4" />
+                </video>
+              ) : (
+                <img src={img} />
+              )}
             </a>
           </SwiperSlide>
         ))}

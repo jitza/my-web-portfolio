@@ -22,11 +22,11 @@ const anchors = [
 
 const App = () => (
   <>
-    {/* <StarryBackground /> */}
+    {/* <MovingParticlesBg /> */}
+        {/* <StarryBackground /> */}
     {/* <MeteoriteBg /> */}
-    <MovingParticlesBg />
-    <h1 className="text-white text-center text-4xl">testing</h1>
-    {/* <NavBar />
+    {/* <h1 className="text-white text-center text-4xl">testing</h1> */}
+    <NavBar />
     <ReactFullpage
       licenseKey={"gplv3-license"}
       anchors={anchors}
@@ -56,7 +56,7 @@ const App = () => (
           </div>
         );
       }}
-    /> */}
+    />
   </>
 );
 
