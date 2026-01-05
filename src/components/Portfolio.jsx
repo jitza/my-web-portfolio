@@ -1,10 +1,8 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-import hangman_game_vid from "../assets/projects_vid/hangman_game_vid.mp4";
-import shooting_game_2 from "../assets/projects/shooting_game_2.jpg";
 import shooting_game from "../assets/projects/shooting_game.jpg";
 import hangman_game from "../assets/projects/hangman_game.jpg";
 import photo_book from "../assets/projects/photo_book.jpg";
@@ -15,6 +13,13 @@ import smiley_face from "../assets/projects/smiley_face.jpg";
 import charts from "../assets/projects/charts.jpg";
 import final_foc from "../assets/projects/final_foc.jpg";
 import cafeteria_simulator from "../assets/projects/cafeteria_simulator.jpg";
+import vb_skills from "../assets/projects/vb_skills.png";
+import chartsVid from "../assets/projects_vid/charts.mp4";
+import shooting_game_vid from "../assets/projects_vid/shooting_game.mp4";
+import hangman from "../assets/projects_vid/hangman.mp4";
+import foc from "../assets/projects_vid/foc_final.mp4";
+import clock from "../assets/projects_vid/clock.mp4";
+import vb_skills_web from "../assets/projects_vid/vb_skills_web.mp4";
 import { EffectCoverflow, Pagination, Keyboard, Autoplay } from "swiper";
 
 const Portfolio = () => {
@@ -23,19 +28,14 @@ const Portfolio = () => {
       id: 1,
       name: "Hangman Game",
       img: hangman_game,
+      vid: hangman,
       link: "https://github.com/jitza/Hangman.git",
     },
     {
-      id: 12,
-      name: "Hangman Game",
-      vid: hangman_game_vid,
-      img: hangman_game,
-      link: "https://github.com/jitza/Hangman.git",
-    },
-    {
-      id: 2,
+      id: 2, 
       name: "Shooting Game",
       img: shooting_game,
+      vid: shooting_game_vid,
       link: "https://github.com/jitza/ShootingGameVol1.git",
     },
     // {
@@ -66,6 +66,7 @@ const Portfolio = () => {
       id: 7,
       name: "Charts",
       img: charts,
+      vid: chartsVid,
       link: "https://github.com/jitza/Charts.git",
     },
     {
@@ -78,6 +79,7 @@ const Portfolio = () => {
       id: 9,
       name: "FOC Final",
       img: final_foc,
+      vid: foc,
       link: "https://github.com/jitza/foc-final-web-project",
     },
     {
@@ -90,7 +92,15 @@ const Portfolio = () => {
       id: 11,
       name: "Digital Clock",
       img: digital_clock,
+      vid: clock,
       link: "https://github.com/jitza/DigitalClock",
+    },
+    {
+      id: 12,
+      name: "VB Skills Web Version",
+      img: vb_skills,
+      vid: vb_skills_web,
+      link: "https://snazzy-custard-4db215.netlify.app/",
     },
   ];
 
@@ -130,6 +140,7 @@ const Portfolio = () => {
                   autoPlay
                   loop
                   muted
+                  playsInline
                 >
                   <source src={vid} type="video/mp4" />
                 </video>
