@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import SocialLinks from "./SocialLinks";
-import myProfile from "../assets/myProfile.png";
+import myAIImage from "../assets/myAIImage.png";
 import testProfile from "../assets/testProfile.jpg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { BsChevronDoubleDown } from "react-icons/bs";
@@ -21,7 +21,7 @@ const Home = () => {
         <section className="overflow-hidden relative">
           <img
             ref={imageRef}
-            src={testProfile}
+            src={myAIImage}
             alt="myProfile"
             className="h-96 p-6 -translate-y-full transition-transform ease-in duration-1000"
           />
@@ -31,7 +31,7 @@ const Home = () => {
             <h1 className="text-6xl font-bold md:text-7xl hover:text-rose-500">
               Jenny Itza
             </h1>
-            <h2 className="text-xl font-bold uppercase">Web Developer</h2>
+            <h2 className="text-xl font-bold uppercase">IT Specialist & Web Developer</h2>
             <SocialLinks />
             <a
               href="#portfolio"
