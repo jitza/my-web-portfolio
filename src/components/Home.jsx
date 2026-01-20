@@ -51,6 +51,9 @@ const Home = () => {
       >
         <BsChevronDoubleDown size={40} />
       </a>
+      <footer className="hidden md:block md:absolute right-4 bottom-4 text-sm text-gray-500 italic">
+         "The only way to do great work is to love what you do." ~ Steve Jobs
+      </footer>
     </div>
   );
 };
