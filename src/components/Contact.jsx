@@ -1,5 +1,6 @@
 import React from "react";
 import { BsChevronDoubleUp } from "react-icons/bs";
+import { FaHeart } from "react-icons/fa";
 import { FaPaperPlane } from "react-icons/fa";
 
 const Contact = () => {
@@ -38,11 +39,12 @@ const Contact = () => {
         </button>
       </form>
       <a
-        className="hidden md:flex absolute bottom-0 animate-bounce"
+        className="hidden md:flex absolute bottom-6 animate-bounce"
         href="#home"
       >
         <BsChevronDoubleUp size={40} />
       </a>
+      {/* <footer className="absolute bottom-2 flex">Designed with <div className="px-1 mt-1"><FaHeart/></div> by Jitza! </footer> */}
     </div>
   );
 };

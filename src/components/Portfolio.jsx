@@ -14,12 +14,15 @@ import charts from "../assets/projects/charts.jpg";
 import final_foc from "../assets/projects/final_foc.jpg";
 import cafeteria_simulator from "../assets/projects/cafeteria_simulator.jpg";
 import vb_skills from "../assets/projects/vb_skills.png";
+import sims from "../assets/projects/sims.png";
+import sims2 from "../assets/projects/sims2.png";
 import chartsVid from "../assets/projects_vid/charts.mp4";
 import shooting_game_vid from "../assets/projects_vid/shooting_game.mp4";
 import hangman from "../assets/projects_vid/hangman.mp4";
 import foc from "../assets/projects_vid/foc_final.mp4";
 import clock from "../assets/projects_vid/clock.mp4";
 import vb_skills_web from "../assets/projects_vid/vb_skills_web.mp4";
+import simsVid from "../assets/projects_vid/simsVid.mp4";
 import { EffectCoverflow, Pagination, Keyboard, Autoplay } from "swiper";
 
 const Portfolio = () => {
@@ -101,6 +104,13 @@ const Portfolio = () => {
       img: vb_skills,
       vid: vb_skills_web,
       link: "https://snazzy-custard-4db215.netlify.app/",
+    },
+    {
+      id: 13,
+      name: "SIMS",
+      img: sims2,
+      vid: simsVid,
+      link: ""
     },
   ];
 
