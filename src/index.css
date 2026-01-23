@@ -89,6 +89,34 @@ h3 {
   height: 550px;
 }
 
+.slide-caption {
+  position: absolute;
+  bottom: 2rem;
+  right: 0rem;
+  max-width: 70%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 8px;
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 0.5s ease;
+}
+
+/* When slide becomes active */
+.swiper-slide-active .slide-caption {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.swiper-slide-next .slide-caption {
+  transform: translateX(100px);
+}
+
+.swiper-slide-prev .slide-caption {
+  transform: translateX(-100px);
+}
+
+
 /* .swiper-slide img {
   display: block;
   width: 100%;

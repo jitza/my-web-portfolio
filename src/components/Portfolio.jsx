@@ -1,4 +1,3 @@
-import React, { useRef, useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -32,6 +31,7 @@ const Portfolio = () => {
       name: "Hangman Game",
       img: hangman_game,
       vid: hangman,
+      description: "A classic word-guessing game where players try to identify a hidden word by suggesting letters within a limited number of attempts.",
       link: "https://github.com/jitza/Hangman.git",
     },
     {
@@ -39,6 +39,7 @@ const Portfolio = () => {
       name: "Shooting Game",
       img: shooting_game,
       vid: shooting_game_vid,
+      description: "An action-packed shooting game where players navigate through levels, aiming to hit targets and avoid obstacles to achieve high scores.",
       link: "https://github.com/jitza/ShootingGameVol1.git",
     },
     // {
@@ -51,18 +52,21 @@ const Portfolio = () => {
       id: 4,
       name: "Cafeteria Simulator",
       img: cafeteria_simulator,
+      description: "A simulation of a cafeteria where the total bill is automatically calcuated for all the different universities that attended an event.",
       link: "https://github.com/jitza/CafeteriaSimulator.git",
     },
     {
       id: 5,
       name: "Photo Book",
       img: photo_book,
+      description: "An application that allows users to create and manage a digital photo album, organizing images into customizable albums with captions and tags.", 
       link: "https://github.com/jitza/Photobook",
     },
     {
       id: 6,
       name: "Notepad with Statistics File Generator",
       img: notepad_with_st_file,
+      description: "A simple notepad application that includes a feature to generate a statistics file, providing insights into word count, character count, and other text metrics.",
       link: "https://github.com/jitza/NotepadStatisticsFile",
     },
     {
@@ -70,12 +74,14 @@ const Portfolio = () => {
       name: "Charts",
       img: charts,
       vid: chartsVid,
+      description: "A data visualization tool that enables users to create various types of charts and graphs to represent data sets effectively.",
       link: "https://github.com/jitza/Charts.git",
     },
     {
       id: 8,
       name: "Notepad with Translator",
       img: notepad_with_translator,
+      description: "A notepad application that integrates a translation feature, allowing users to translate selected text into different languages directly within the app.",
       link: "https://github.com/jitza/NotepadWithTranslation",
     },
     {
@@ -83,12 +89,14 @@ const Portfolio = () => {
       name: "FOC Final",
       img: final_foc,
       vid: foc,
+      description: "Final project for the Fundamentals of Computing course, showcasing a website with the differenct concepts learned throughout the course.",
       link: "https://github.com/jitza/foc-final-web-project",
     },
     {
       id: 10,
       name: "Smiley Face",
       img: smiley_face,
+      description: "A simple graphical application that displays a movable smiley face, demonstrating basic drawing and user interface skills.",
       link: "https://github.com/jitza/SmileyFace",
     },
     {
@@ -96,6 +104,7 @@ const Portfolio = () => {
       name: "Digital Clock",
       img: digital_clock,
       vid: clock,
+      description: "A digital clock application that displays the current time in hours, minutes, and seconds, with options for different time formats and styles.",
       link: "https://github.com/jitza/DigitalClock",
     },
     {
@@ -103,6 +112,7 @@ const Portfolio = () => {
       name: "VB Skills Web Version",
       img: vb_skills,
       vid: vb_skills_web,
+      description: "A web-based version of a VB Skills application, showcasing various volleyaball skills.",
       link: "https://snazzy-custard-4db215.netlify.app/",
     },
     {
@@ -110,6 +120,7 @@ const Portfolio = () => {
       name: "SIMS",
       img: sims2,
       vid: simsVid,
+      description: "A student information management system that allows users to manage and organize student data effectively. (Still in development)",
       link: ""
     },
   ];
@@ -141,8 +152,8 @@ const Portfolio = () => {
         pagination={{ clickable: true }}
         modules={[EffectCoverflow, Pagination, Keyboard, Autoplay]}
       >
-        {projects.map(({ id, name, img, link, vid}) => (
-          <SwiperSlide key={id}>
+        {projects.map(({ id, name, img, link, vid, description}) => (
+          <SwiperSlide className="relative" key={id}>
             <a href={link} target="_blank">
               {vid ? (
                 <video
@@ -157,6 +168,10 @@ const Portfolio = () => {
               ) : (
                 <img src={img} />
               )}
+              <div className="slide-caption">
+                <div className="text-sm font-semibold text-teal-500">{name}</div>
+                <p className="text-xs opacity-75">{description}</p>
+              </div>
             </a>
           </SwiperSlide>
         ))}
