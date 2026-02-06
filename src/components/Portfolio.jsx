@@ -169,7 +169,7 @@ const Portfolio = () => {
                 <img src={img} />
               )}
               <div className="slide-caption">
-                <div className="text-sm font-semibold text-teal-500">{name}</div>
+                <div className="text-sm font-semibold text-teal-400">{name}</div>
                 <p className="text-xs opacity-75">{description}</p>
               </div>
             </a>
