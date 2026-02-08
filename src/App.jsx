@@ -10,7 +10,7 @@ import StarryBackground from "./components/StarryBackground";
 import "./index.css";
 import MovingParticlesBg from "./components/MovingParticlesBg";
 import MeteoriteBg from "./components/MeteoriteBg";
-// import Starfield from 'react-starfield';
+import CustomStarfield from "./components/CustomStarfield";
 
 const anchors = [
   "home",
@@ -27,11 +27,7 @@ const App = () => (
         {/* <StarryBackground /> */}
     {/* <MeteoriteBg /> */}
     {/* <h1 className="text-white text-center text-4xl">testing</h1> */}
-    {/* <Starfield
-        starCount={1000}
-        starColor={[255, 255, 255]}
-        speedFactor={0.05}
-      /> */}
+    <CustomStarfield />
     <NavBar />
     <ReactFullpage
       licenseKey={"gplv3-license"}
