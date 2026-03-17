@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import SocialLinks from "./SocialLinks";
 import myAIImage from "../assets/myAIImage.png";
 import testProfile from "../assets/testProfile.jpg";
+import PDF from "../assets/cv/JI_CV.pdf";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { BsChevronDoubleDown } from "react-icons/bs";
 
@@ -33,6 +34,13 @@ const Home = () => {
             </h1>
             <h2 className="text-xl font-bold uppercase">IT Specialist & Web Developer</h2>
             <SocialLinks />
+            <div className="flex"> 
+              <a
+              href={PDF} target="_blank" rel="noreferrer"
+              className="hidden md:flex items-center w-fit px-6 py-2 mt-2 mr-4 rounded-md cursor-pointer group text-white bg-rose-500 hover:bg-rose-700"
+            >
+              Download CV
+            </a>
             <a
               href="#portfolio"
               className="hidden md:flex items-center w-fit px-6 py-2 mt-2 rounded-md cursor-pointer group text-white bg-rose-500 hover:bg-rose-700"
@@ -42,6 +50,8 @@ const Home = () => {
                 <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
               </span>
             </a>
+            </div>
+           
           </div>
         </section>
       </div>
