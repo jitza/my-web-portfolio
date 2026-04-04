@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import SocialLinks from "./SocialLinks";
 import myAIImage from "../assets/myAIImage.png";
+import myAiImage_c from "../assets/myAiImage_c.png";
 import testProfile from "../assets/testProfile.jpg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { BsChevronDoubleDown } from "react-icons/bs";
@@ -21,7 +22,7 @@ const Home = () => {
         <section className="overflow-hidden relative">
           <img
             ref={imageRef}
-            src={myAIImage}
+            src={myAiImage_c}
             alt="myProfile"
             className="h-96 p-6 -translate-y-full transition-transform ease-in duration-500"
           />
