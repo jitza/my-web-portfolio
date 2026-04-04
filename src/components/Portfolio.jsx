@@ -1,7 +1,9 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow, Pagination, Keyboard, Autoplay, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 import shooting_game from "../assets/projects/shooting_game.jpg";
 import hangman_game from "../assets/projects/hangman_game.jpg";
 import photo_book from "../assets/projects/photo_book.jpg";
@@ -22,7 +24,6 @@ import foc from "../assets/projects_vid/foc_final.mp4";
 import clock from "../assets/projects_vid/clock.mp4";
 import vb_skills_web from "../assets/projects_vid/vb_skills_web.mp4";
 import simsVid from "../assets/projects_vid/simsVid.mp4";
-import { EffectCoverflow, Pagination, Keyboard, Autoplay } from "swiper";
 
 const Portfolio = () => {
   const projects = [
@@ -126,22 +127,31 @@ const Portfolio = () => {
   ];
 
   return (
-    <div className="h-screen w-full flex justify-center items-center ">
+    <div className="min-h-screen w-full flex justify-center items-center">
       <h1 className="absolute top-20 font-heading text-xl font-bold uppercase underline underline-offset-8 text-center md:text-2xl md:top-20">
         My Personal Work
       </h1>
+      <div className="relative w-full flex justify-center items-center">  
+      <button className="swiper-button-prev text-gray-500 hover:text-white md:mx-12"></button>
+      <button className="swiper-button-next text-gray-500 hover:text-white md:mx-12"></button>
       <Swiper
         className="animated-left"
         style={{
           "--swiper-pagination-color": "#fff",
           "--swiper-pagination-bullet-inactive-color": "#fff",
         }}
+        observer={true}
+        observeParents={true}
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
         keyboard={{ enabled: true }}
         slidesPerView={"auto"}
         loop={true}
+        navigation={{
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        }}
         coverflowEffect={{
           rotate: 50,
           stretch: 0,
@@ -149,11 +159,11 @@ const Portfolio = () => {
           modifier: 1,
           slideShadows: true,
         }}
-        pagination={{ clickable: true }}
-        modules={[EffectCoverflow, Pagination, Keyboard, Autoplay]}
+        pagination={{ clickale: true }}
+        modules={[EffectCoverflow, Pagination, Keyboard, Autoplay, Navigation]}
       >
         {projects.map(({ id, name, img, link, vid, description}) => (
-          <SwiperSlide className="relative" key={id}>
+          <SwiperSlide key={id}>
             <a href={link} target="_blank">
               {vid ? (
                 <video
@@ -176,6 +186,7 @@ const Portfolio = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+    </div>
     </div>
   );
 };

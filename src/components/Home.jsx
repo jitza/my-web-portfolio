@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import SocialLinks from "./SocialLinks";
 import myAIImage from "../assets/myAIImage.png";
+import myAiImage_c from "../assets/myAiImage_c.png";
 import testProfile from "../assets/testProfile.jpg";
-import PDF from "../assets/cv/JI_CV.pdf";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { BsChevronDoubleDown } from "react-icons/bs";
 
@@ -22,9 +22,9 @@ const Home = () => {
         <section className="overflow-hidden relative">
           <img
             ref={imageRef}
-            src={myAIImage}
+            src={myAiImage_c}
             alt="myProfile"
-            className="h-96 p-6 -translate-y-full transition-transform ease-in duration-1000"
+            className="h-96 p-6 -translate-y-full transition-transform ease-in duration-500"
           />
         </section>
         <section className="flex items-center">
@@ -36,7 +36,7 @@ const Home = () => {
             <SocialLinks />
             <div className="flex"> 
               <a
-              href={PDF} target="_blank" rel="noreferrer"
+              href="https://drive.google.com/file/d/1oNMjlv0Xd_iKf5Fc0vvta9o1NNg1y3RW/view?usp=sharing" target="_blank" rel="noreferrer"
               className="hidden md:flex items-center w-fit px-6 py-2 mt-2 mr-4 rounded-md cursor-pointer group text-white bg-rose-500 hover:bg-rose-700"
             >
               Download CV
