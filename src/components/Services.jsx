@@ -2,12 +2,12 @@ import React from "react";
 import graphicDesign from "../assets/services/graphicDesign.png";
 import appDevelopment from "../assets/services/appDevelopment.png";
 import webDevelopment from "../assets/services/webDevelopment.png";
-import techSup3 from "../assets/services/techSup3.png";
+import techSup from "../assets/services/techSup.png";
 
 
 const Services = () => {
   const services = [
-    { id: 0, name: "Tech Support", img: techSup3 },
+    { id: 0, name: "Tech Support", img: techSup },
     { id: 1, name: "Graphic Design", img: graphicDesign },
     { id: 2, name: "Web Development", img: webDevelopment },
     { id: 3, name: "App Development", img: appDevelopment },

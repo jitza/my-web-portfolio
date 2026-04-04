@@ -3,7 +3,6 @@ import { FaChevronDown } from "react-icons/fa";
 import { FaChevronUp } from "react-icons/fa";
 
 const About = () => {
-
   const [isExpanded, setIsExpanded] = useState(false);
   const contentRef = useRef(null);
 
@@ -20,19 +19,6 @@ const About = () => {
         <div className="p-6 flex flex-col items-center md:text-xl">
           Hello, I am Jenny, a versatile creative professional with expertise in
           web development, graphic design, and app development.{" "}
-          <button
-            className="flex flex-col items-center text-sm w-fit px-2 py-1 m-2 rounded-md cursor-pointer group text-white bg-rose-500 hover:bg-rose-700"
-            onClick={handleClick}
-          >
-            <span>{isExpanded ? "Show Less" : "Show More"}</span>
-            <span>
-              {isExpanded ? (
-                <FaChevronUp size={15} />
-              ) : (
-                <FaChevronDown size={15} />
-              )}
-            </span>
-          </button>
           <div
             style={{
               maxHeight: isExpanded
@@ -58,7 +44,14 @@ const About = () => {
               </p>
             </div>
           </div>
-
+          <button
+            className="flex flex-col items-center text-sm w-fit px-2 py-1 m-2 rounded-md cursor-pointer group text-white bg-rose-500 hover:bg-rose-700"
+            onClick={handleClick}
+          >
+            <span>{isExpanded ? <FaChevronUp size={15} /> : ""}</span>
+            <span>{isExpanded ? "Show Less" : "Show More"}</span>
+            <span>{!isExpanded ? <FaChevronDown size={15} /> : ""}</span>
+          </button>
         </div>
       </section>
     </div>
