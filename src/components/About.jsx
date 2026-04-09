@@ -45,12 +45,12 @@ const About = () => {
             </div>
           </div>
           <button
-            className="flex flex-col items-center text-sm w-fit px-2 py-1 m-2 rounded-md cursor-pointer group text-white bg-rose-500 hover:bg-rose-700"
+            className="flex items-center text-sm w-fit px-2 m-2 rounded-md cursor-pointer text-white bg-rose-500 hover:bg-rose-700"
             onClick={handleClick}
           >
-            <span>{isExpanded ? <FaChevronUp size={15} /> : ""}</span>
-            <span>{isExpanded ? "Show Less" : "Show More"}</span>
-            <span>{!isExpanded ? <FaChevronDown size={15} /> : ""}</span>
+            <span class="pr-1">{isExpanded ? "Show Less" : "Show More"}</span>
+            <span>{isExpanded ? <FaChevronUp size={14} /> : ""}</span>
+            <span>{!isExpanded ? <FaChevronDown size={14} /> : ""}</span>
           </button>
         </div>
       </section>
