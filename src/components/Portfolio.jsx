@@ -114,7 +114,7 @@ const Portfolio = () => {
       img: vb_skills,
       vid: vb_skills_web,
       description: "A web-based version of a VB Skills application, showcasing various volleyaball skills.",
-      link: "https://snazzy-custard-4db215.netlify.app/",
+      link: "https://vbskills.netlify.app/",
     },
     {
       id: 13,
