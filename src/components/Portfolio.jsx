@@ -122,7 +122,6 @@ const Portfolio = () => {
       img: sims2,
       vid: simsVid,
       description: "A student information management system that allows users to manage and organize student data effectively. (Still in development)",
-      link: ""
     },
   ];
 
